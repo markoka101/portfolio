@@ -1,0 +1,67 @@
+export const projects = [
+  {
+    title: "React Reserve",
+    subtitle: "MERN Stack",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: "./project-1.gif",
+    link: "https://reactbootcamp.com",
+  },
+  {
+    title: "React Tracks",
+    subtitle: "React and Python",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: "./project-2.gif",
+    link: "https://reactbootcamp.com",
+  },
+  {
+    title: "DevChat",
+    subtitle: "React and Firebase",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: "./project-3.gif",
+    link: "https://reactbootcamp.com",
+  },
+  {
+    title: "Epic Todo App",
+    subtitle: "React Hooks",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: "./project-4.gif",
+    link: "https://reactbootcamp.com",
+  },
+];
+
+export const languages = [
+  "Java",
+  "JavaScript",
+  "C++",
+  "SQL",
+  "HTML/CSS"
+];
+
+export const frameworks = [
+  "Spring Boot",
+  "Hibernate",
+  "JPA",
+  "Node",
+  "Express"
+];
+
+export const database = [
+  "Git",
+  "Github",
+  "Hibernate",
+  "JPA",
+  "PostgreSQL"
+];
+
+export const tools = [
+  "IntelliJ",
+  "Visual Studio",
+  "Postman",
+  "Eclipse",
+  "Emacs"
+];
+
