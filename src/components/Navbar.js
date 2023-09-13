@@ -24,11 +24,10 @@ export default function Navbar() {
             href="https://www.linkedin.com/in/mark-oka/"
             className="linkedin social">
               <FontAwesomeIcon icon={faLinkedin} size='2x'/>
-              
             </a>
             <a
             href="https://github.com/markoka101"
-            className="github social">
+            className="md:ml-2">
               <FontAwesomeIcon icon={faGithub} size='2x'/>
             </a>
             <a
