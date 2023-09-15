@@ -30,12 +30,17 @@ export default function About() {
                   className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
                   Learn More About Me
                 </a>
+                <a
+                  href="./mark-oka-resume.pdf" target='_blank' rel='noreferrer'
+                  className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+                  Open My Resume
+                </a>
               </div>
             </div>
             <div className="sm:max-w-sm lg:w-full">
               <img
-                className="w-1/2 h-1/2 float-right"
-                alt="hero"
+                className="w-2/3 h-1/2 float-right"
+                alt="me"
                 src="./pls.jpg"
               />
             </div>
