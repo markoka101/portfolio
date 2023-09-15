@@ -19,15 +19,18 @@ export default function Navbar() {
               <a href="#skills" className="mr-5 hover:text-white">
                 Skills
               </a>
+              <a href="#person" className="mr-5 hover:text-white"> 
+                About Me
+              </a>
             </nav>
             <a
             href="https://www.linkedin.com/in/mark-oka/"
-            className="mr-2">
+            className="lin">
               <FontAwesomeIcon icon={faLinkedin} size='2x'/>
             </a>
             <a
             href="https://github.com/markoka101"
-            className="md:ml-2">
+            className="md:ml-2 md:mr-2">
               <FontAwesomeIcon icon={faGithub} size='2x'/>
             </a>
             <a

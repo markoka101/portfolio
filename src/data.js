@@ -1,36 +1,18 @@
 export const projects = [
   {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    title: "Blackjack capstone",
+    subtitle: "Java | Javascript | Spring Boot | Node.js | Express | Jpa | HTML/CSS",
+    description: "Web application to play Blackjack",
     image: "./project-1.gif",
-    link: "https://reactbootcamp.com",
+    link: "https://github.com/markoka101/blackjack-capstone",
   },
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    title: "Poker capstone",
+    subtitle: "Javascript | Node.js | Express | HTML/CSS",
+    description: "Web application to play poker",
     image: "./project-2.gif",
-    link: "https://reactbootcamp.com",
-  },
-  {
-    title: "DevChat",
-    subtitle: "React and Firebase",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-3.gif",
-    link: "https://reactbootcamp.com",
-  },
-  {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-4.gif",
-    link: "https://reactbootcamp.com",
-  },
+    link: "https://github.com/markoka101/poker-capstone",
+  } 
 ];
 
 export const languages = [
@@ -46,7 +28,8 @@ export const frameworks = [
   "Hibernate",
   "JPA",
   "Node",
-  "Express"
+  "Express",
+  "React"
 ];
 
 export const database = [

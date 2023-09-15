@@ -47,7 +47,7 @@ export default function Skills() {
 
           <div className="container px-5 py-1 mx-auto">
             <div className="text-center">
-              <button className="flex:500000 text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" onClick={()=> {
+              <button className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" onClick={()=> {
                 setShowData(!showData)
               }}><h2>{databaseName}</h2></button>
               {showData && displayDatabase}
@@ -56,7 +56,7 @@ export default function Skills() {
 
           <div className="container px-5 py-1 mx-auto">
             <div className="text-center">
-              <button className="flex-1 text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" onClick={()=> {
+              <button className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" onClick={()=> {
                 setShowTools(!showTools)
               }}><h2>{toolName}</h2></button>
               {showTools && displayTools}
