@@ -11,7 +11,7 @@ export default function Person(){
               <h2 className='title-font sm:text-2x1 mb-1 font-medium text-white'>
                 Background
               </h2>
-              <p className="mb-2 leading-relaxed text-gray-300">
+              <p className="mb-2 leading-relaxed text-gray-300 text-left">
               I was born in Sao Paulo Brazil and moved to New York shortly after I was born. I have dual citizenship of Brazil and the United States. 
               I come from a very diverse background where my paternal grandparents are from Japan and Texas. I also have three cats 
               named Throatcuttah, Hades, and Salem.
@@ -19,7 +19,7 @@ export default function Person(){
               <h3 className='title-font sm:text-2x1 mb-1 font-medium text-white'>
                 Hobbies/Interests
               </h3>
-              <p className="leading-relaxed text-gray-300">
+              <p className="leading-relaxed text-gray-300 text-left">
                 -I am a guitarist who has played in metal and rock bands <br/>
                 -As a software engineer, I am legally required to be a gamer <br/>
                 -I have an extensive collection of board games and organize game nights with friends and family <br/>

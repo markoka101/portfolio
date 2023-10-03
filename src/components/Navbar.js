@@ -23,16 +23,19 @@ export default function Navbar() {
                 About Me
               </a>
             </nav>
-            <a
-            href="https://www.linkedin.com/in/mark-oka/"
-            className="lin">
-              <FontAwesomeIcon icon={faLinkedin} size='2x'/>
-            </a>
-            <a
-            href="https://github.com/markoka101"
-            className="md:ml-2 md:mr-2">
-              <FontAwesomeIcon icon={faGithub} size='2x'/>
-            </a>
+            <div className="inlinde-felx items-center mt-1">
+              <a
+              href="https://www.linkedin.com/in/mark-oka/"
+              className="ml-2 mr-2">
+                <FontAwesomeIcon icon={faLinkedin} size='2x'/>
+              </a>
+              <a
+              href="https://github.com/markoka101"
+              className="ml-2 mr-2">
+                <FontAwesomeIcon icon={faGithub} size='2x'/>
+              </a>
+            </div>
+           
             <a
               href="#contact"
               className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
