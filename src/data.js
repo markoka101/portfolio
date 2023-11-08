@@ -1,7 +1,22 @@
 export const projects = [
+  
+  {
+    title: "Lesson Plan",
+    subtitle: "Javascript | Node.js",
+    description: "Lesson plan I developed for my students",
+    image: "./generic-github.jpg",
+    link: "https://github.com/markoka101/lessons"
+  },
+  {
+    title: "TODO Application",
+    subtitle: "Java | Javascript | Spring Boot | JPA | React",
+    description: "Application which enables user to keep track of tasks",
+    image: "./generic-github.jpg",
+    link: "https://github.com/markoka101/todo",
+  },
   {
     title: "Blackjack capstone",
-    subtitle: "Java | Javascript | Spring Boot | Node.js | Express | Jpa | HTML/CSS",
+    subtitle: "Java | Javascript | Spring Boot | Node.js | JPA",
     description: "Web application to play Blackjack",
     image: "./generic-github.jpg",
     link: "https://github.com/markoka101/blackjack-capstone",
@@ -44,7 +59,6 @@ export const tools = [
   "IntelliJ",
   "Visual Studio",
   "Postman",
-  "Eclipse",
-  "Emacs"
+  "Eclipse"
 ];
 

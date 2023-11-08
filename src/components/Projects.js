@@ -4,15 +4,15 @@ import { projects } from "../data";
 
 export default function Projects() {
     return (
-        <section id="projects" className="text-gray-400 bg-gray-900 body-font">
+        <section id="projects" className="text-gray-400 bg-gradient-to-tl from-slate-600 to-slate-700 body-font">
           <div className="container px-5 py-10 mx-auto text-center lg:px-40">
             <div className="flex flex-col w-full mb-20">
               <CodeIcon className="mx-auto inline-block w-10 mb-4" />
               <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
                 My Projects
               </h1>
-              <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                These are some of the projects I have worked on. <br/>
+              <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-300">
+                These are some of the projects I am working/worked on. <br/>
                 I have more projects coming soon!
               </p>
             </div>
@@ -21,6 +21,7 @@ export default function Projects() {
                 <a
                   href={project.link}
                   target="_blank"
+                  rel="noreferrer"
                   key={project.image}
                   className="sm:w-1/2 w-100 p-4">
                   <div className="flex relative">
@@ -29,7 +30,7 @@ export default function Projects() {
                       className="absolute inset-0 w-full h-full object-cover object-center"
                       src={project.image}
                     />
-                    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 sm:opacity-0 md:opacity-0 lg:opacity-0 hover:opacity-100">
                       <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                         {project.subtitle}
                       </h2>

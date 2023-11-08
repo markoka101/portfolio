@@ -18,7 +18,7 @@ export default function Skills() {
     return (
       <section id="skills">
         <div className="container px-5 py-10 mx-auto">
-          <div className="text-center mb-20">
+          <div className="text-center mb-10">
             <ChipIcon className="w-10 inline-block mb-4" />
             <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
               Skills &amp; Technologies
@@ -26,8 +26,8 @@ export default function Skills() {
           </div>
 
           <div className="container px-5 py-1 mx-auto">
-            <div className="text-center">
-              <button className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" onClick={()=> {
+            <div className="text-center items-center justify-center">
+              <button className="inline-flex text-white justify-center bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg w-3/4" onClick={()=> {
                 setShowLang(!showLang)
               }}><h2>{languageName}</h2></button>
               {showLang && displayLanguage}
@@ -37,7 +37,7 @@ export default function Skills() {
 
           <div className="container px-5 py-1 mx-auto">
             <div className="text-center">  
-              <button className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" onClick={()=> {
+              <button className="inline-flex text-white justify-center bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg w-3/4" onClick={()=> {
                 setShowFrame(!showFrame)
               }}><h2>{frameworkName}</h2></button>
               {showFrame && displayFrameworks}
@@ -47,7 +47,7 @@ export default function Skills() {
 
           <div className="container px-5 py-1 mx-auto">
             <div className="text-center">
-              <button className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" onClick={()=> {
+              <button className="inline-flex text-white justify-center bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg w-3/4" onClick={()=> {
                 setShowData(!showData)
               }}><h2>{databaseName}</h2></button>
               {showData && displayDatabase}
@@ -56,14 +56,13 @@ export default function Skills() {
 
           <div className="container px-5 py-1 mx-auto">
             <div className="text-center">
-              <button className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" onClick={()=> {
+              <button className="inline-flex text-white justify-center bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg w-3/4" onClick={()=> {
                 setShowTools(!showTools)
               }}><h2>{toolName}</h2></button>
               {showTools && displayTools}
             </div>
           </div>
-
-        </div>
+          </div>
     </section>
     );
 }
