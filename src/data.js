@@ -4,28 +4,24 @@ export const projects = [
     title: "Lesson Plan",
     subtitle: "Javascript | Node.js",
     description: "Lesson plan I developed for my students",
-    image: "./generic-github.jpg",
     link: "https://github.com/markoka101/lessons"
   },
   {
     title: "TODO Application",
     subtitle: "Java | Javascript | Spring Boot | JPA | React",
-    description: "Application which enables user to keep track of tasks",
-    image: "./generic-github.jpg",
+    description: "Application to keep track of tasks",
     link: "https://github.com/markoka101/todo",
   },
   {
     title: "Blackjack capstone",
     subtitle: "Java | Javascript | Spring Boot | Node.js | JPA",
     description: "Web application to play Blackjack",
-    image: "./generic-github.jpg",
     link: "https://github.com/markoka101/blackjack-capstone",
   },
   {
     title: "Poker capstone",
     subtitle: "Javascript | Node.js | Express | HTML/CSS",
     description: "Web application to play poker",
-    image: "./generic-github.jpg",
     link: "https://github.com/markoka101/poker-capstone",
   } 
 ];
