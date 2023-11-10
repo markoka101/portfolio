@@ -9,7 +9,7 @@ export default function About() {
                 Mark Oka
                 <p className="title-font sm:text-2xl font-medium text-white">Software Engineer</p>
               </h1>
-              <p className="mb-8 leading-relaxed text-gray-200 text-left">
+              <p className="mb-6 leading-relaxed text-gray-200 text-left">
               I am a software engineer located in the New York City metropolitan area. 
               My software development skills are up-to-date with the latest standards and practices. 
               I possess proficiency in working independently or within a team environment.
@@ -17,22 +17,22 @@ export default function About() {
               <div className="flex flex-col md:flex-row lg:flex-row justify-center">
                 <a
                   href="#contact"
-                  className="inline-flex text-white justify-center bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+                  className="inline-flex text-white justify-center bg-green-500 border-0 my-1 md:my-0.5 lg:my-0.5 mx-2 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
                   Contact Me
                 </a>
                 <a
                   href="#projects"
-                  className="sm:ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+                  className="inline-flex text-gray-400 justify-center bg-gray-800 border-0 my-0.5 mx-2 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
                   See My Past Work
                 </a>
                 <a
                   href="#person"
-                  className="sm:ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+                  className="inline-flex text-gray-400 justify-center bg-gray-800 border-0 my-0.5 mx-2 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
                   Learn More About Me
                 </a>
                 <a
                   href="./mark-oka-resume.pdf" target='_blank' rel='noreferrer'
-                  className="sm:ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+                  className="inline-flex text-gray-400 justify-center bg-gray-800 border-0 my-0.5 mx-2 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
                   Open My Resume
                 </a>
               </div>

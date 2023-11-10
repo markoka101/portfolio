@@ -23,7 +23,7 @@ export default function Projects() {
                   target="_blank"
                   rel="noreferrer"
                   key={project.title}
-                  className="w-1/2 h-1/2 p-4 overflow-auto">
+                  className="w-1/2 h-1/2 p-4">
                   <div className="flex relative">
                     <div className="px-8 py-10 relative w-full border-4 border-gray-800 bg-gray-900 hover:bg-slate-900 hover:border-slate-400">
                       <h2 className="hidden md:block lg:block tracking-widest text-sm title-font font-medium text-green-400 mb-1">
