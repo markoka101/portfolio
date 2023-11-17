@@ -5,9 +5,9 @@ export default function About() {
         <section id="about">
           <div className="container mx-auto flex px-10 py-15 md:flex-row flex-col items-center w-11/12 bg-gray-500 border-4 border-gray-300 border-opacity-75 my-4">
             <div className="flex-1 lg:flex-grow md:w-full lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-10 md:mb-0 items-center text-center p-3">
-              <h1 className="title-font sm:text-4xl mb-2 font-medium text-white">
+              <h1 className="title-font text-3xl mb-2 font-medium text-white">
                 Mark Oka
-                <p className="title-font sm:text-2xl font-medium text-white">Software Engineer</p>
+                <p className="title-font text-lg font-medium text-white mt-1">Software Engineer</p>
               </h1>
               <p className="mb-6 leading-relaxed text-gray-200 text-left">
               I am a software engineer located in the New York City metropolitan area. 

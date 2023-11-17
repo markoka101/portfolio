@@ -5,7 +5,7 @@ export default function Person(){
         <section id="person" className="relative bg-gradient-to-tl from-slate-600 to-slate-700">
           <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="title-font sm:text-4xl mb-2 font-medium text-white">
+              <h1 className="title-font sm:text-4xl mb-5 font-medium text-white">
                 About Me
               </h1>
               <h2 className='title-font sm:text-2x1 mb-1 font-medium text-white'>

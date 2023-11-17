@@ -23,9 +23,9 @@ export default function Projects() {
                   target="_blank"
                   rel="noreferrer"
                   key={project.title}
-                  className="w-1/2 h-1/2 p-4">
-                  <div className="flex relative">
-                    <div className="px-8 py-10 relative w-full border-4 border-gray-800 bg-gray-900 hover:bg-slate-900 hover:border-slate-400">
+                  className="w-1/2  min-h-full">
+                  <div className="m-2">
+                    <div className="flex flex-col px-8 py-10 m-0 w-full h-64 border-4 border-gray-800 bg-gray-900 hover:bg-slate-900 hover:border-slate-400 items-center justify-center">
                       <h2 className="hidden md:block lg:block tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                         {project.subtitle}
                       </h2>

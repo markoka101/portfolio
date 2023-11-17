@@ -36,8 +36,6 @@ export const languages = [
 
 export const frameworks = [
   "Spring Boot",
-  "Hibernate",
-  "JPA",
   "Node",
   "Express",
   "React"
