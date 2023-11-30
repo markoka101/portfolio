@@ -23,12 +23,12 @@ export default function About() {
                 <a
                   href="#projects"
                   className="inline-flex text-gray-400 justify-center bg-gray-800 border-0 my-0.5 mx-2 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
-                  See My Past Work
+                  See Past Work
                 </a>
                 <a
                   href="#person"
                   className="inline-flex text-gray-400 justify-center bg-gray-800 border-0 my-0.5 mx-2 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
-                  Learn More About Me
+                  Learn About Me
                 </a>
                 <a
                   href="./mark-oka-resume.pdf" target='_blank' rel='noreferrer'
