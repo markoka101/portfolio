@@ -38,7 +38,8 @@ export const frameworks = [
   "Spring Boot",
   "Node",
   "Express",
-  "React"
+  "React",
+  "Tailwind"
 ];
 
 export const database = [
