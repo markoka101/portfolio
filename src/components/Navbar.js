@@ -7,10 +7,8 @@ export default function Navbar() {
     return (
         <header className="bg-gray-800 sm:sticky md:sticky lg:sticky top-0 z-10 ">
           <div className="container mx-auto flex flex-wrap py-3 px-2 flex-row items-center justify-between">
-            <a className="title-font font-medium text-slate-200 hover:text-white mb-1">
-              <div href="#about" className="text-xl">
-                Mark Oka
-              </div>
+            <a className="font-medium text-slate-200 hover:text-white mb-1 text-xl" href="#top">
+              Mark Oka
             </a>
             <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex-wrap items-center text-base justify-center hidden md:block lg:block">
               <a href="#projects" className="mx-2 hover:text-white">
