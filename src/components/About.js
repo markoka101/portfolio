@@ -7,7 +7,7 @@ export default function About() {
             <div className="flex-1 lg:flex-grow md:w-full lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-10 md:mb-0 items-center text-center p-3">
               <h1 className="title-font text-3xl mb-2 font-medium text-white">
                 Mark Oka
-                <p className="title-font text-lg font-medium text-white mt-1">Software Engineer</p>
+                <p className="text-lg font-medium text-white mt-1">Software Engineer</p>
               </h1>
               <p className="mb-6 leading-relaxed text-gray-200 text-left">
               I am a software engineer located in the New York City metropolitan area. 
@@ -22,17 +22,17 @@ export default function About() {
                 </a>
                 <a
                   href="#projects"
-                  className="inline-flex text-gray-400 justify-center bg-gray-800 border-0 my-0.5 mx-2 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+                  className="inline-flex text-gray-400 justify-center bg-gray-800 border-0 my-0.5 mx-2 py-2 px-6 focus:outline-none hover:text-white rounded text-lg">
                   See Past Work
                 </a>
                 <a
                   href="#person"
-                  className="inline-flex text-gray-400 justify-center bg-gray-800 border-0 my-0.5 mx-2 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+                  className="inline-flex text-gray-400 justify-center bg-gray-800 border-0 my-0.5 mx-2 py-2 px-6 focus:outline-none hover:text-white rounded text-lg">
                   Learn About Me
                 </a>
                 <a
                   href="./mark-oka-resume.pdf" target='_blank' rel='noreferrer'
-                  className="inline-flex text-gray-400 justify-center bg-gray-800 border-0 my-0.5 mx-2 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+                  className="inline-flex text-gray-400 justify-center bg-gray-800 border-0 my-0.5 mx-2 py-2 px-6 focus:outline-none hover:text-white rounded text-lg">
                   Open My Resume
                 </a>
               </div>
