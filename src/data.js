@@ -1,5 +1,10 @@
 export const projects = [
-  
+  {
+    title: "Taylor M Portfolio",
+    subtitle: "Javascript | JSX | React | CSS | Tailwind",
+    description: "Portfolio developed for client",
+    link: "https://www.taylor-m.com/",
+  }, 
   {
     title: "Lesson Plan",
     subtitle: "Javascript | Node.js",
@@ -17,13 +22,7 @@ export const projects = [
     subtitle: "Java | Javascript | Spring Boot | Node.js | JPA",
     description: "Web application to play Blackjack",
     link: "https://github.com/markoka101/blackjack-capstone",
-  },
-  {
-    title: "Poker capstone",
-    subtitle: "Javascript | Node.js | Express | HTML/CSS",
-    description: "Web application to play poker",
-    link: "https://github.com/markoka101/poker-capstone",
-  } 
+  }
 ];
 
 export const languages = [
