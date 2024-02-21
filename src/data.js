@@ -6,10 +6,10 @@ export const projects = [
     link: "https://www.taylor-m.com/",
   }, 
   {
-    title: "Lesson Plan",
-    subtitle: "Javascript | Node.js",
-    description: "Lesson plan I developed for my students",
-    link: "https://github.com/markoka101/lessons"
+    title: "Event Tracker",
+    subtitle: "Java | Javascript | Spring Boot | JPA | React | Mapbox",
+    description: "Event Tracking application",
+    link: "https://github.com/markoka101/event-tracker"
   },
   {
     title: "TODO Application",
@@ -18,10 +18,10 @@ export const projects = [
     link: "https://github.com/markoka101/todo",
   },
   {
-    title: "Blackjack capstone",
-    subtitle: "Java | Javascript | Spring Boot | Node.js | JPA",
-    description: "Web application to play Blackjack",
-    link: "https://github.com/markoka101/blackjack-capstone",
+    title: "Lesson Plan",
+    subtitle: "Javascript | Node.js",
+    description: "Lesson plan I developed for my students",
+    link: "https://github.com/markoka101/lessons"
   }
 ];
 
