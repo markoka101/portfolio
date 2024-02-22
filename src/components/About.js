@@ -17,7 +17,7 @@ export default function About() {
               <div className="flex flex-col md:flex-row lg:flex-row justify-center">
                 <a
                   href="#contact"
-                  className="inline-flex text-white justify-center bg-green-500 border-0 my-1 md:my-0.5 lg:my-0.5 mx-2 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+                  className="inline-flex text-white justify-center bg-green-600 border-0 my-1 md:my-0.5 lg:my-0.5 mr-2 py-2 px-6 focus:outline-none hover:ring-2 hover:ring-slate-300 rounded text-lg">
                   Contact Me
                 </a>
                 <a
