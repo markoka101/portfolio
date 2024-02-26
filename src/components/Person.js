@@ -5,21 +5,21 @@ export default function Person(){
         <section id="person" className="relative bg-gradient-to-tr from-slate-500 to-slate-600">
           <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="title-font sm:text-4xl mb-5 font-medium text-white">
+              <h1 className="sm:text-4xl mb-5 font-medium text-white">
                 About Me
               </h1>
-              <h2 className='title-font sm:text-2x1 mb-1 font-medium text-white'>
+              <h2 className='sm:text-2x1 mb-1 font-medium text-white'>
                 Background
               </h2>
-              <p className="mb-4 leading-relaxed text-gray-300 text-left">
+              <p className="mb-4 leading-relaxed text-gray-200 text-left">
               I was born in Sao Paulo Brazil and moved to New York shortly after I was born. I have dual citizenship of Brazil and the United States. 
               I come from a very diverse background where my paternal grandparents are from Japan and Texas. I also have three cats 
               named Throatcuttah, Hades, and Salem.
               </p>
-              <h3 className='title-font sm:text-2x1 mb-1 font-medium text-white'>
+              <h3 className='sm:text-2x1 mb-1 font-medium text-white'>
                 Hobbies/Interests
               </h3>
-              <p className="leading-relaxed text-gray-300 text-left">
+              <p className="leading-relaxed text-gray-200 text-left">
                 -I am a guitarist who has played in metal and rock bands <br/>
                 -As a software engineer, I am legally required to be a gamer <br/>
                 -I have an extensive collection of board games and organize game nights with friends and family <br/>

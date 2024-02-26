@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
     return (
         <section id="about">
-          <div className="container mx-auto flex px-10 py-15 md:flex-row flex-col items-center w-11/12 bg-gray-500 border-4 border-gray-300 border-opacity-75 my-4">
+          <div className="container mx-auto flex px-10 py-15 md:flex-row flex-col items-center w-11/12 bg-gray-500 border-4 border-gray-300 border-opacity-75 my-4 rounded-xl">
             <div className="flex-1 lg:flex-grow md:w-full lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-10 md:mb-0 items-center text-center p-3">
               <h1 className="title-font text-3xl mb-2 font-medium text-white">
                 Mark Oka
@@ -17,22 +17,22 @@ export default function About() {
               <div className="flex flex-col md:flex-row lg:flex-row justify-center">
                 <a
                   href="#contact"
-                  className="inline-flex text-white justify-center bg-green-600 border-0 my-1 md:my-0.5 lg:my-0.5 mr-2 py-2 px-6 focus:outline-none hover:ring-2 hover:ring-slate-300 rounded text-lg">
+                  className="inline-flex text-white justify-center bg-green-600 my-1 md:my-0.5 lg:my-0.5 mr-2 py-2 px-6 focus:outline-none border-2 border-transparent hover:border-slate-300 rounded-xl text-lg transition-colors duration-300 ease-in-out">
                   Contact Me
                 </a>
                 <a
                   href="#projects"
-                  className="inline-flex text-gray-400 justify-center bg-gray-800 border-0 my-0.5 mx-2 py-2 px-6 focus:outline-none hover:text-white rounded text-lg">
+                  className="inline-flex text-gray-400 justify-center bg-gray-800 my-0.5 mx-2 py-2 px-6 focus:outline-none hover:text-white rounded-xl text-lg transition-colors duration-300 ease-in-out">
                   See Past Work
                 </a>
                 <a
                   href="#person"
-                  className="inline-flex text-gray-400 justify-center bg-gray-800 border-0 my-0.5 mx-2 py-2 px-6 focus:outline-none hover:text-white rounded text-lg">
+                  className="inline-flex text-gray-400 justify-center bg-gray-800 my-0.5 mx-2 py-2 px-6 focus:outline-none hover:text-white rounded-xl text-lg transition-colors duration-300 ease-in-out">
                   Learn About Me
                 </a>
                 <a
                   href="./mark-oka-resume.pdf" target='_blank' rel='noreferrer'
-                  className="inline-flex text-gray-400 justify-center bg-gray-800 border-0 my-0.5 mx-2 py-2 px-6 focus:outline-none hover:text-white rounded text-lg">
+                  className="inline-flex text-gray-400 justify-center bg-gray-800 my-0.5 mx-2 py-2 px-6 focus:outline-none hover:text-white rounded-xl text-lg transition-colors duration-300 ease-in-out">
                   Open My Resume
                 </a>
               </div>

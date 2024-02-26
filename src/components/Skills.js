@@ -27,7 +27,7 @@ export default function Skills() {
 
           <div className="container px-5 py-1 mx-auto">
             <div className="text-center items-center justify-center">
-              <button className="inline-flex text-slate-50 justify-center bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-gradient-to-r from-emerald-600 to-emerald-500 hover:text-white rounded text-lg w-3/4" onClick={()=> {
+              <button className="inline-flex text-slate-50 justify-center bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-600 hover:text-white rounded text-lg w-3/4 transition-colors duration-300 ease-in-out" onClick={()=> {
                 setShowLang(!showLang)
               }}><h2>{languageName}</h2></button>
               {showLang && displayLanguage}
@@ -37,7 +37,7 @@ export default function Skills() {
 
           <div className="container px-5 py-1 mx-auto">
             <div className="text-center">  
-              <button className="inline-flex text-slate-50 justify-center bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-gradient-to-r from-emerald-600 to-emerald-500 hover:text-white rounded text-lg w-3/4" onClick={()=> {
+              <button className="inline-flex text-slate-50 justify-center bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-600 hover:text-white rounded text-lg w-3/4 transition-colors duration-300 ease-in-out" onClick={()=> {
                 setShowFrame(!showFrame)
               }}><h2>{frameworkName}</h2></button>
               {showFrame && displayFrameworks}
@@ -47,7 +47,7 @@ export default function Skills() {
 
           <div className="container px-5 py-1 mx-auto">
             <div className="text-center">
-              <button className="inline-flex text-slate-50 justify-center bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-gradient-to-r from-emerald-600 to-emerald-500 hover:text-white rounded text-lg w-3/4" onClick={()=> {
+              <button className="inline-flex text-slate-50 justify-center bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-600 hover:text-white rounded text-lg w-3/4 transition-colors duration-300 ease-in-out" onClick={()=> {
                 setShowData(!showData)
               }}><h2>{databaseName}</h2></button>
               {showData && displayDatabase}
@@ -56,7 +56,7 @@ export default function Skills() {
 
           <div className="container px-5 py-1 mx-auto">
             <div className="text-center">
-              <button className="inline-flex text-slate-50 justify-center bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-gradient-to-r from-emerald-600 to-emerald-500 hover:text-white rounded text-lg w-3/4" onClick={()=> {
+              <button className="inline-flex text-slate-50 justify-center bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-600 hover:text-white rounded text-lg w-3/4 transition-colors duration-300 ease-in-out" onClick={()=> {
                 setShowTools(!showTools)
               }}><h2>{toolName}</h2></button>
               {showTools && displayTools}

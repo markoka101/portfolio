@@ -25,7 +25,7 @@ export default function Projects() {
                   key={project.title}
                   className="w-1/2  min-h-full">
                   <div className="m-2">
-                    <div className="flex flex-col px-8 py-10 m-0 w-full h-64 border-4 border-gray-800 bg-gray-900 hover:bg-slate-900 hover:border-slate-400 items-center justify-center rounded">
+                    <div className="flex flex-col px-8 py-10 m-0 w-full h-64 border-4 border-gray-800 bg-gray-900 hover:bg-slate-900 hover:border-slate-400 items-center justify-center rounded-xl transition-colors duration-300 ease-in-out">
                       <h2 className="hidden md:block lg:block tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                         {project.subtitle}
                       </h2>

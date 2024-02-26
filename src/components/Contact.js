@@ -34,7 +34,7 @@ export default function Contact() {
               netlify
               name="contact"
               onSubmit={handleSubmit}
-              className="lg:w-1/2 flex flex-col md:mx-auto w-full md:py-8 mt-8 md:mt-0 p-5 border-gray-600 border-8 bg-gray-900 rounded-md">
+              className="lg:w-1/2 flex flex-col md:mx-auto w-full md:py-8 mt-8 md:mt-0 p-5 border-gray-600 border-8 bg-gray-900 rounded-xl">
               <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
                 Contact Me
               </h2>
@@ -86,7 +86,7 @@ export default function Contact() {
               </div>
               <button
                 type="submit"
-                className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-xl text-lg transition-colors duration-300 ease-in-out">
                 Submit
               </button>
             </form>
