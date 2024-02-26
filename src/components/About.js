@@ -17,22 +17,22 @@ export default function About() {
               <div className="flex flex-col md:flex-row lg:flex-row justify-center">
                 <a
                   href="#contact"
-                  className="inline-flex text-white justify-center bg-green-600 my-1 md:my-0.5 lg:my-0.5 mr-2 py-2 px-6 focus:outline-none border-2 border-transparent hover:border-slate-300 rounded-xl text-lg transition-colors duration-300 ease-in-out">
+                  className="inline-flex text-white justify-center bg-green-600 my-1 md:my-0.5 lg:my-0.5 md:mr-2 lg:mr-2 py-2 px-6 focus:outline-none border-2 border-transparent hover:border-slate-300 rounded-xl text-lg transition-colors duration-300 ease-in-out">
                   Contact Me
                 </a>
                 <a
                   href="#projects"
-                  className="inline-flex text-gray-400 justify-center bg-gray-800 my-0.5 mx-2 py-2 px-6 focus:outline-none hover:text-white rounded-xl text-lg transition-colors duration-300 ease-in-out">
+                  className="inline-flex text-gray-400 justify-center bg-gray-800 my-1 md:my-0.5 lg:my-0.5 md:mr-2 lg:mr-2 py-2 px-6 focus:outline-none border-2 border-transparent hover:text-white rounded-xl text-lg transition-colors duration-300 ease-in-out">
                   See Past Work
                 </a>
                 <a
                   href="#person"
-                  className="inline-flex text-gray-400 justify-center bg-gray-800 my-0.5 mx-2 py-2 px-6 focus:outline-none hover:text-white rounded-xl text-lg transition-colors duration-300 ease-in-out">
+                  className="inline-flex text-gray-400 justify-center bg-gray-800 my-1 md:my-0.5 lg:my-0.5 md:mr-2 lg:mr-2 py-2 px-6 focus:outline-none border-2 border-transparent hover:text-white rounded-xl text-lg transition-colors duration-300 ease-in-out">
                   Learn About Me
                 </a>
                 <a
                   href="./mark-oka-resume.pdf" target='_blank' rel='noreferrer'
-                  className="inline-flex text-gray-400 justify-center bg-gray-800 my-0.5 mx-2 py-2 px-6 focus:outline-none hover:text-white rounded-xl text-lg transition-colors duration-300 ease-in-out">
+                  className="inline-flex text-gray-400 justify-center bg-gray-800 my-1 md:my-0.5 lg:my-0.5 md:mr-2 lg:mr-2 py-2 px-6 focus:outline-none  hover:text-white rounded-xl text-lg transition-colors duration-300 ease-in-out">
                   Open My Resume
                 </a>
               </div>
