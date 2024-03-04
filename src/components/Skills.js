@@ -20,12 +20,12 @@ export default function Skills() {
   const displayLanguage =         
   <Transition 
   show={showLang}
-  enter="transition-all duration-975 overflow-hidden"
-          enterFrom="transform scale-95 opacity-0 max-h-0"
-          enterTo="transform scale-100 opacity-100 duration-700"
-          leave="transition duration-475 ease-out"
+  enter="transition-all duration-500 overflow-hidden"
+          enterFrom="transform scale-0 opacity-0 "
+          enterTo="transform scale-100 opacity-100 duration-300"
+          leave="transition duration-200 ease-out"
           leaveFrom="transform scale-100 opacity-100"
-          leaveTo="transform scale-95 opacity-0"
+          leaveTo="transform scale-0 opacity-0"
   className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 mx-2">
     {languages.map((languages) => (
       <div key={languages} className="p-2 sm:w-1/2 w-full">
@@ -43,12 +43,12 @@ export default function Skills() {
   const displayFrameworks =
   <Transition 
   show={showFrame}
-  enter="transition-all duration-975 overflow-hidden"
-          enterFrom="transform scale-95 opacity-0 max-h-0"
-          enterTo="transform scale-100 opacity-100 duration-700"
-          leave="transition duration-475 ease-out"
+  enter="transition-all duration-500 overflow-hidden"
+          enterFrom="transform scale-0 opacity-0"
+          enterTo="transform scale-100 opacity-100 duration-300"
+          leave="transition duration-200 ease-out"
           leaveFrom="transform scale-100 opacity-100"
-          leaveTo="transform scale-95 opacity-0"
+          leaveTo="transform scale-0 opacity-0"
   className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 mx-2">
     {frameworks.map((frameworks) => (
       <div key={frameworks} className="p-2 sm:w-1/2 w-full">
@@ -66,12 +66,12 @@ export default function Skills() {
   const displayDatabase = 
   <Transition 
   show={showData}
-  enter="transition-all duration-975 overflow-hidden"
-          enterFrom="transform scale-95 opacity-0 max-h-0"
-          enterTo="transform scale-100 opacity-100 duration-700"
-          leave="transition duration-475 ease-out"
+  enter="transition-all duration-500 overflow-hidden"
+          enterFrom="transform scale-0 opacity-0 "
+          enterTo="transform scale-100 opacity-100 duration-300"
+          leave="transition duration-200 ease-out"
           leaveFrom="transform scale-100 opacity-100"
-          leaveTo="transform scale-95 opacity-0"
+          leaveTo="transform scale-0 opacity-0"
   className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 mx-2">
     {database.map((database) => (
       <div key={database} className="p-2 sm:w-1/2 w-full">
@@ -89,12 +89,12 @@ export default function Skills() {
   const displayTools = 
   <Transition
   show={showTools}
-  enter="transition-all duration-975 overflow-hidden"
-          enterFrom="transform scale-95 opacity-0 max-h-0"
-          enterTo="transform scale-100 opacity-100 duration-700"
-          leave="transition duration-475 ease-out"
-          leaveFrom="transform scale-100 opacity-100"
-          leaveTo="transform scale-95 opacity-0"
+  enter="transition-all duration-500 overflow-hidden"
+  enterFrom="transform scale-0 opacity-0 "
+  enterTo="transform scale-100 opacity-100 duration-300"
+  leave="transition duration-200 ease-out"
+  leaveFrom="transform scale-100 opacity-100"
+  leaveTo="transform scale-0 opacity-0"
   className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 mx-2">
     {tools.map((tools) => (
       <div key={tools} className="p-2 sm:w-1/2 w-full">
