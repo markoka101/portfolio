@@ -20,18 +20,18 @@ export default function Skills() {
   const displayLanguage =         
   <Transition 
   show={showLang}
-  enter="transition-all duration-500 overflow-hidden"
-          enterFrom="transform scale-0 opacity-0 "
-          enterTo="transform scale-100 opacity-100 duration-300"
-          leave="transition duration-200 ease-out"
-          leaveFrom="transform scale-100 opacity-100"
-          leaveTo="transform scale-0 opacity-0"
-  className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 mx-2">
+  enter="transition-all duration-700 overflow-hidden ease transform"
+    enterFrom="opacity-50 -translate-y-4"
+    enterTo="  opacity-100 translate-y-0 "
+  leave="transition duration-300 ease transform"
+    leaveFrom="opacity-50 translate-y-0"
+    leaveTo="opacity-0 -translate-y-4"
+  className="flex flex-wrap lg:w-3/4 sm:mx-auto sm:mb-2">
     {languages.map((languages) => (
-      <div key={languages} className="p-2 sm:w-1/2 w-full">
+      <div key={languages} className="p-2 sm:w-1/2">
         <div className="bg-gray-800 rounded flex p-4 h-full items-center">
           <BadgeCheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
-          <span className="title-font font-medium text-white">
+          <span className="font-medium text-white">
             {languages}
           </span>
         </div>
@@ -43,18 +43,18 @@ export default function Skills() {
   const displayFrameworks =
   <Transition 
   show={showFrame}
-  enter="transition-all duration-500 overflow-hidden"
-          enterFrom="transform scale-0 opacity-0"
-          enterTo="transform scale-100 opacity-100 duration-300"
-          leave="transition duration-200 ease-out"
-          leaveFrom="transform scale-100 opacity-100"
-          leaveTo="transform scale-0 opacity-0"
-  className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 mx-2">
+  enter="transition-all duration-700 overflow-hidden ease transform"
+    enterFrom="opacity-50 -translate-y-4"
+    enterTo="  opacity-100 translate-y-0 "
+  leave="transition duration-300 ease transform"
+    leaveFrom="opacity-50 translate-y-0"
+    leaveTo="opacity-0 -translate-y-4"
+  className="flex flex-wrap lg:w-3/4 sm:mx-auto sm:mb-2">
     {frameworks.map((frameworks) => (
-      <div key={frameworks} className="p-2 sm:w-1/2 w-full">
+      <div key={frameworks} className="p-2 sm:w-1/2">
         <div className="bg-gray-800 rounded flex p-4 h-full items-center">
           <BadgeCheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
-          <span className="title-font font-medium text-white">
+          <span className="font-medium text-white">
             {frameworks}
           </span>
         </div>
@@ -66,18 +66,18 @@ export default function Skills() {
   const displayDatabase = 
   <Transition 
   show={showData}
-  enter="transition-all duration-500 overflow-hidden"
-          enterFrom="transform scale-0 opacity-0 "
-          enterTo="transform scale-100 opacity-100 duration-300"
-          leave="transition duration-200 ease-out"
-          leaveFrom="transform scale-100 opacity-100"
-          leaveTo="transform scale-0 opacity-0"
-  className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 mx-2">
+  enter="transition-all duration-700 overflow-hidden ease transform"
+    enterFrom="opacity-50 -translate-y-4"
+    enterTo="  opacity-100 translate-y-0 "
+  leave="transition duration-300 ease transform"
+    leaveFrom="opacity-50 translate-y-0"
+    leaveTo="opacity-0 -translate-y-4"
+  className="flex flex-wrap lg:w-3/4 sm:mx-auto sm:mb-2">
     {database.map((database) => (
-      <div key={database} className="p-2 sm:w-1/2 w-full">
+      <div key={database} className="p-2 sm:w-1/2">
         <div className="bg-gray-800 rounded flex p-4 h-full items-center">
           <BadgeCheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
-          <span className="title-font font-medium text-white">
+          <span className="font-medium text-white">
             {database}
           </span>
         </div>
@@ -89,18 +89,18 @@ export default function Skills() {
   const displayTools = 
   <Transition
   show={showTools}
-  enter="transition-all duration-500 overflow-hidden"
-  enterFrom="transform scale-0 opacity-0 "
-  enterTo="transform scale-100 opacity-100 duration-300"
-  leave="transition duration-200 ease-out"
-  leaveFrom="transform scale-100 opacity-100"
-  leaveTo="transform scale-0 opacity-0"
-  className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 mx-2">
+  enter="transition-all duration-700 overflow-hidden ease transform"
+    enterFrom="opacity-50 -translate-y-4"
+    enterTo="  opacity-100 translate-y-0 "
+  leave="transition duration-300 ease transform"
+    leaveFrom="opacity-50 translate-y-0"
+    leaveTo="opacity-0 -translate-y-4"
+  className="flex flex-wrap lg:w-3/4 sm:mx-auto sm:mb-2">
     {tools.map((tools) => (
-      <div key={tools} className="p-2 sm:w-1/2 w-full">
+      <div key={tools} className="py-2 px-1 sm:w-1/2">
         <div className="bg-gray-800 rounded flex p-4 h-full items-center">
           <BadgeCheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
-          <span className="title-font font-medium text-white">
+          <span className="font-medium text-white">
             {tools}
           </span>
         </div>
@@ -120,7 +120,7 @@ export default function Skills() {
 
           <div className="container px-5 py-1 mx-auto">
             <div className="text-center items-center justify-center">
-              <button className="inline-flex text-gray-50 justify-center bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-600 hover:text-white rounded text-lg w-3/4 transition-colors duration-300 ease-in-out" 
+              <button className="inline-flex text-gray-50 justify-center bg-green-500 border-0 py-2 px-6 mb-2 focus:outline-none hover:bg-emerald-600 hover:text-white rounded text-lg w-3/4 transition-colors duration-300 ease-in-out" 
               onClick={()=> {
                 setShowLang(!showLang)
               }}>
@@ -133,7 +133,7 @@ export default function Skills() {
 
           <div className="container px-5 py-1 mx-auto">
             <div className="text-center">  
-              <button className="inline-flex text-gray-50 justify-center bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-600 hover:text-white rounded text-lg w-3/4 transition-colors duration-300 ease-in-out" onClick={()=> {
+              <button className="inline-flex text-gray-50 justify-center bg-green-500 border-0 py-2 px-6 mb-2 focus:outline-none hover:bg-emerald-600 hover:text-white rounded text-lg w-3/4 transition-colors duration-300 ease-in-out" onClick={()=> {
                 setShowFrame(!showFrame)
               }}><h2>{frameworkName}</h2></button>
               {displayFrameworks}
@@ -143,7 +143,7 @@ export default function Skills() {
 
           <div className="container px-5 py-1 mx-auto">
             <div className="text-center">
-              <button className="inline-flex text-gray-50 justify-center bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-600 hover:text-white rounded text-lg w-3/4 transition-colors duration-300 ease-in-out" onClick={()=> {
+              <button className="inline-flex text-gray-50 justify-center bg-green-500 border-0 py-2 px-6 mb-2 focus:outline-none hover:bg-emerald-600 hover:text-white rounded text-lg w-3/4 transition-colors duration-300 ease-in-out" onClick={()=> {
                 setShowData(!showData)
               }}><h2>{databaseName}</h2></button>
               {displayDatabase}
@@ -152,7 +152,7 @@ export default function Skills() {
 
           <div className="container px-5 pt-1 pb-10 mx-auto">
             <div className="text-center">
-              <button className="inline-flex text-gray-50 justify-center bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-600 hover:text-white rounded text-lg w-3/4 transition-colors duration-300 ease-in-out" onClick={()=> {
+              <button className="inline-flex text-gray-50 justify-center bg-green-500 border-0 py-2 px-6 mb-2 focus:outline-none hover:bg-emerald-600 hover:text-white rounded text-lg w-3/4 transition-colors duration-300 ease-in-out" onClick={()=> {
                 setShowTools(!showTools)
               }}><h2>{toolName}</h2></button>
               {displayTools}
