@@ -14,7 +14,7 @@ export default function Skills() {
   const languageName = showLang ? 'Hide Programming Languages':'Show Programming Languages';
   const frameworkName = showFrame ? 'Hide Frameworks & Libraries':'Show Frameworks & Libraries';
   const databaseName = showData ? 'Hide Database & Industry Tools':'Show Database & Industry Tools';
-  const toolName = showTools ? 'Hide Tools/Software':'Show Tools/Software';
+  const toolName = showTools ? 'Hide Tools & Software':'Show Tools & Software';
 
   //display programming languages
   const displayLanguage =         
@@ -26,9 +26,9 @@ export default function Skills() {
   leave="transition duration-300 ease transform"
     leaveFrom="opacity-50 translate-y-0"
     leaveTo="opacity-0 -translate-y-4"
-  className="flex flex-wrap lg:w-3/4 sm:mx-auto sm:mb-2">
+  className="flex flex-wrap items-center justify-center sm:justify-normal md:justify-normal lg:justify-normal lg:w-3/4 sm:mx-auto sm:mb-2 mx-2">
     {languages.map((languages) => (
-      <div key={languages} className="p-2 sm:w-1/2">
+      <div key={languages} className="py-2 px-1 sm:w-1/2 w-3/4">
         <div className="bg-gray-800 rounded flex p-4 h-full items-center">
           <BadgeCheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
           <span className="font-medium text-white">
@@ -49,9 +49,9 @@ export default function Skills() {
   leave="transition duration-300 ease transform"
     leaveFrom="opacity-50 translate-y-0"
     leaveTo="opacity-0 -translate-y-4"
-  className="flex flex-wrap lg:w-3/4 sm:mx-auto sm:mb-2">
+  className="flex flex-wrap items-center justify-center sm:justify-normal md:justify-normal lg:justify-normal lg:w-3/4 sm:mx-auto sm:mb-2 mx-2">
     {frameworks.map((frameworks) => (
-      <div key={frameworks} className="p-2 sm:w-1/2">
+      <div key={frameworks} className="py-2 px-1 sm:w-1/2 w-3/4">
         <div className="bg-gray-800 rounded flex p-4 h-full items-center">
           <BadgeCheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
           <span className="font-medium text-white">
@@ -72,9 +72,9 @@ export default function Skills() {
   leave="transition duration-300 ease transform"
     leaveFrom="opacity-50 translate-y-0"
     leaveTo="opacity-0 -translate-y-4"
-  className="flex flex-wrap lg:w-3/4 sm:mx-auto sm:mb-2">
+  className="flex flex-wrap items-center justify-center sm:justify-normal md:justify-normal lg:justify-normal lg:w-3/4 sm:mx-auto sm:mb-2 mx-2">
     {database.map((database) => (
-      <div key={database} className="p-2 sm:w-1/2">
+      <div key={database} className="py-2 px-1 sm:w-1/2 w-3/4">
         <div className="bg-gray-800 rounded flex p-4 h-full items-center">
           <BadgeCheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
           <span className="font-medium text-white">
@@ -95,9 +95,9 @@ export default function Skills() {
   leave="transition duration-300 ease transform"
     leaveFrom="opacity-50 translate-y-0"
     leaveTo="opacity-0 -translate-y-4"
-  className="flex flex-wrap lg:w-3/4 sm:mx-auto sm:mb-2">
+  className="flex flex-wrap items-center justify-center sm:justify-normal md:justify-normal lg:justify-normal lg:w-3/4 sm:mx-auto sm:mb-2 mx-2">
     {tools.map((tools) => (
-      <div key={tools} className="py-2 px-1 sm:w-1/2">
+      <div key={tools} className="py-2 px-1 sm:w-1/2 w-3/4 ">
         <div className="bg-gray-800 rounded flex p-4 h-full items-center">
           <BadgeCheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
           <span className="font-medium text-white">
