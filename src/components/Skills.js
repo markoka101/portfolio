@@ -21,11 +21,11 @@ export default function Skills() {
   <Transition 
   show={showLang}
   enter="transition-all duration-700 overflow-hidden ease transform"
-    enterFrom="opacity-50 -translate-y-4"
-    enterTo="  opacity-100 translate-y-0 "
-  leave="transition duration-300 ease transform"
-    leaveFrom="opacity-50 translate-y-0"
-    leaveTo="opacity-0 -translate-y-4"
+    enterFrom="opacity-50 max-h-0"
+    enterTo="  opacity-100 max-h-screen"
+  leave="transition-all duration-300 overflow-hidden ease transform"
+    leaveFrom="opacity-100 max-h-screen"
+    leaveTo="opacity-0 max-h-0"
   className="flex flex-wrap items-center justify-center sm:justify-normal md:justify-normal lg:justify-normal lg:w-3/4 sm:mx-auto sm:mb-2 mx-2">
     {languages.map((languages) => (
       <div key={languages} className="py-2 px-1 sm:w-1/2 w-3/4">
@@ -44,11 +44,11 @@ export default function Skills() {
   <Transition 
   show={showFrame}
   enter="transition-all duration-700 overflow-hidden ease transform"
-    enterFrom="opacity-50 -translate-y-4"
-    enterTo="  opacity-100 translate-y-0 "
-  leave="transition duration-300 ease transform"
-    leaveFrom="opacity-50 translate-y-0"
-    leaveTo="opacity-0 -translate-y-4"
+    enterFrom="opacity-50 max-h-0"
+    enterTo="  opacity-100 max-h-screen"
+  leave="transition-all duration-300 overflow-hidden ease transform"
+    leaveFrom="opacity-100 max-h-screen"
+    leaveTo="opacity-0 max-h-0"
   className="flex flex-wrap items-center justify-center sm:justify-normal md:justify-normal lg:justify-normal lg:w-3/4 sm:mx-auto sm:mb-2 mx-2">
     {frameworks.map((frameworks) => (
       <div key={frameworks} className="py-2 px-1 sm:w-1/2 w-3/4">
@@ -67,11 +67,11 @@ export default function Skills() {
   <Transition 
   show={showData}
   enter="transition-all duration-700 overflow-hidden ease transform"
-    enterFrom="opacity-50 -translate-y-4"
-    enterTo="  opacity-100 translate-y-0 "
-  leave="transition duration-300 ease transform"
-    leaveFrom="opacity-50 translate-y-0"
-    leaveTo="opacity-0 -translate-y-4"
+    enterFrom="opacity-50 max-h-0"
+    enterTo="  opacity-100 max-h-screen"
+  leave="transition-all duration-300 overflow-hidden ease transform"
+    leaveFrom="opacity-100 max-h-screen"
+    leaveTo="opacity-0 max-h-0"
   className="flex flex-wrap items-center justify-center sm:justify-normal md:justify-normal lg:justify-normal lg:w-3/4 sm:mx-auto sm:mb-2 mx-2">
     {database.map((database) => (
       <div key={database} className="py-2 px-1 sm:w-1/2 w-3/4">
@@ -90,11 +90,11 @@ export default function Skills() {
   <Transition
   show={showTools}
   enter="transition-all duration-700 overflow-hidden ease transform"
-    enterFrom="opacity-50 -translate-y-4"
-    enterTo="  opacity-100 translate-y-0 "
-  leave="transition duration-300 ease transform"
-    leaveFrom="opacity-50 translate-y-0"
-    leaveTo="opacity-0 -translate-y-4"
+    enterFrom="opacity-50 max-h-0"
+    enterTo="  opacity-100 max-h-screen"
+  leave="transition-all duration-300 overflow-hidden ease transform"
+    leaveFrom="opacity-100 max-h-screen"
+    leaveTo="opacity-0 max-h-0"
   className="flex flex-wrap items-center justify-center sm:justify-normal md:justify-normal lg:justify-normal lg:w-3/4 sm:mx-auto sm:mb-2 mx-2">
     {tools.map((tools) => (
       <div key={tools} className="py-2 px-1 sm:w-1/2 w-3/4 ">
