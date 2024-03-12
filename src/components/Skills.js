@@ -25,7 +25,7 @@ export default function Skills() {
     enterTo="  opacity-100 max-h-screen"
   leave="transition-all duration-300 overflow-hidden ease transform"
     leaveFrom="opacity-100 max-h-screen"
-    leaveTo="opacity-0 max-h-0"
+    leaveTo="opacity-50 max-h-0"
   className="flex flex-wrap items-center justify-center sm:justify-normal md:justify-normal lg:justify-normal lg:w-3/4 sm:mx-auto sm:mb-2 mx-2">
     {languages.map((languages) => (
       <div key={languages} className="py-2 px-1 sm:w-1/2 w-3/4">
@@ -48,7 +48,7 @@ export default function Skills() {
     enterTo="  opacity-100 max-h-screen"
   leave="transition-all duration-300 overflow-hidden ease transform"
     leaveFrom="opacity-100 max-h-screen"
-    leaveTo="opacity-0 max-h-0"
+    leaveTo="opacity-50 max-h-0"
   className="flex flex-wrap items-center justify-center sm:justify-normal md:justify-normal lg:justify-normal lg:w-3/4 sm:mx-auto sm:mb-2 mx-2">
     {frameworks.map((frameworks) => (
       <div key={frameworks} className="py-2 px-1 sm:w-1/2 w-3/4">
@@ -71,7 +71,7 @@ export default function Skills() {
     enterTo="  opacity-100 max-h-screen"
   leave="transition-all duration-300 overflow-hidden ease transform"
     leaveFrom="opacity-100 max-h-screen"
-    leaveTo="opacity-0 max-h-0"
+    leaveTo="opacity-50 max-h-0"
   className="flex flex-wrap items-center justify-center sm:justify-normal md:justify-normal lg:justify-normal lg:w-3/4 sm:mx-auto sm:mb-2 mx-2">
     {database.map((database) => (
       <div key={database} className="py-2 px-1 sm:w-1/2 w-3/4">
@@ -94,7 +94,7 @@ export default function Skills() {
     enterTo="  opacity-100 max-h-screen"
   leave="transition-all duration-300 overflow-hidden ease transform"
     leaveFrom="opacity-100 max-h-screen"
-    leaveTo="opacity-0 max-h-0"
+    leaveTo="opacity-50 max-h-0"
   className="flex flex-wrap items-center justify-center sm:justify-normal md:justify-normal lg:justify-normal lg:w-3/4 sm:mx-auto sm:mb-2 mx-2">
     {tools.map((tools) => (
       <div key={tools} className="py-2 px-1 sm:w-1/2 w-3/4 ">
