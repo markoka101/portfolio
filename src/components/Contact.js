@@ -14,6 +14,13 @@ export default function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault();
+
+    if (name === '' || email === '' || message === '') {
+      alert('All fields must be filled');
+      return;
+    }
+
+
     fetch('/' , {
       method: 'POST',
       headers: { "Content-Type": 'application/x-www-form-urlencoded'},
