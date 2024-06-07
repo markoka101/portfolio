@@ -10,7 +10,7 @@ import Person from "./components/Person";
 
 export default function App() {
     return (
-        <main className="text-gray-400 bg-gradient-to-br from-slate-300 via-slate-400 to-slate-500">
+        <main className="text-gray-400 bg-stone-400 bg-opacity-75 min-h-screen">
             <BrowserRouter>
                 <Navbar />
                 <Routes>
