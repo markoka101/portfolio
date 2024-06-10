@@ -7,13 +7,13 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 export default function Navbar() {
     const navigate = useNavigate();
     return (
-        <header className="bg-slate-700 bg-opacity-80 sm:sticky md:sticky lg:sticky top-0 z-10">
-            <div className="container flex flex-wrap py-2 px-3 flex-row items-center justify-between min-w-full">
+        <header className="bg-slate-700 sm:sticky md:sticky lg:sticky top-0 z-10">
+            <div className="container flex flex-wrap py-1 px-3 flex-row items-center justify-between min-w-full">
                 <button
                     className="font-medium text-slate-300 hover:text-white mb-1 text-xl transition-colors duration-300 ease-in-out"
                     onClick={() => navigate("/")}
                 >
-                    Mark Oka
+                    Home
                 </button>
                 <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex-wrap items-center text-gray-300 justify-center hidden md:block lg:block">
                     <button
