@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function About() {
+    const navigate = useNavigate();
     return (
         <section id="about" className="min-h-screen">
             <div className="container mx-auto flex px-10 py-15 md:flex-row flex-col items-center w-11/12 border-4 border-gray-300 border-opacity-75 my-4 rounded-xl">
@@ -20,24 +21,24 @@ export default function About() {
                         team environment.
                     </p>
                     <div className="flex flex-col md:flex-row lg:flex-row justify-center">
-                        <a
-                            href="#contact"
+                        <button
+                            onClick={() => navigate("/contact")}
                             className="inline-flex text-white justify-center bg-green-600 my-1 md:my-0.5 lg:my-0.5 md:mr-2 lg:mr-2 py-2 px-6 focus:outline-none border-2 border-transparent hover:border-slate-300 rounded-xl text-lg transition-all duration-200 ease-in"
                         >
                             Contact Me
-                        </a>
-                        <a
-                            href="#projects"
+                        </button>
+                        <button
+                            onClick={() => navigate("/projects")}
                             className="inline-flex text-gray-400 justify-center bg-gray-800 my-1 md:my-0.5 lg:my-0.5 md:mr-2 lg:mr-2 py-2 px-6 focus:outline-none border-2 border-transparent hover:border-slate-400 hover:text-white rounded-xl text-lg transition-all duration-200 ease-in"
                         >
                             See Past Work
-                        </a>
-                        <a
-                            href="#person"
+                        </button>
+                        <button
+                            onClick={() => navigate("/about-me")}
                             className="inline-flex text-gray-400 justify-center bg-gray-800 my-1 md:my-0.5 lg:my-0.5 md:mr-2 lg:mr-2 py-2 px-6 focus:outline-none border-2 border-transparent hover:border-slate-400 hover:text-white rounded-xl text-lg transition-all duration-200 ease-in"
                         >
                             Learn About Me
-                        </a>
+                        </button>
                         <a
                             href="./mark-oka-resume.pdf"
                             target="_blank"
