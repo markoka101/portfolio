@@ -13,7 +13,7 @@ export default function Navbar() {
                     className="font-medium text-slate-300 hover:text-white mb-1 text-xl transition-colors duration-300 ease-in-out"
                     onClick={() => navigate("/")}
                 >
-                    Home
+                    Mark Oka
                 </button>
                 <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex-wrap items-center text-gray-300 justify-center hidden md:block lg:block">
                     <button
