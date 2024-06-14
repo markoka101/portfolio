@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { DarkThemeToggle, Flowbite } from "flowbite-react";
 
 import About from "./components/About";
 import Navbar from "./components/Navbar";
@@ -12,14 +13,16 @@ export default function App() {
     return (
         <main className="text-gray-400 bg-stone-400 bg-opacity-75 min-h-screen">
             <BrowserRouter>
-                <Navbar />
-                <Routes>
-                    <Route path="*" element={<About />} />
-                    <Route path="projects" element={<Projects />} />
-                    <Route path="skills" element={<Skills />} />
-                    <Route path="about-me" element={<Person />} />
-                    <Route path="contact" element={<Contact />} />
-                </Routes>
+                <Flowbite>
+                    <Navbar />
+                    <Routes>
+                        <Route path="*" element={<About />} />
+                        <Route path="projects" element={<Projects />} />
+                        <Route path="skills" element={<Skills />} />
+                        <Route path="about-me" element={<Person />} />
+                        <Route path="contact" element={<Contact />} />
+                    </Routes>
+                </Flowbite>
             </BrowserRouter>
         </main>
     );
