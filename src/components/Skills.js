@@ -1,110 +1,107 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Transition } from "@headlessui/react";
 
-import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
+import { CheckCircleIcon, ChipIcon } from "@heroicons/react/24/solid";
 import { languages, frameworks, database, tools } from "../data";
 
+import RevealOnScroll from "./RevealOnScroll";
 export default function Skills() {
-    const [showLang, setShowLang] = useState(false);
-    const [showFrame, setShowFrame] = useState(false);
-    const [showData, setShowData] = useState(false);
-    const [showTools, setShowTools] = useState(false);
+    const refLanguage = useRef();
+    const isVisibleLanguage = RevealOnScroll(refLanguage);
 
-    const languageName = showLang
-        ? "Hide Programming Languages"
-        : "Show Programming Languages";
-    const frameworkName = showFrame
-        ? "Hide Frameworks & Libraries"
-        : "Show Frameworks & Libraries";
-    const databaseName = showData
-        ? "Hide Database & Industry Tools"
-        : "Show Database & Industry Tools";
-    const toolName = showTools
-        ? "Hide Tools & Software"
-        : "Show Tools & Software";
+    const refFrameworks = useRef();
+    const isVisibleFramework = RevealOnScroll(refFrameworks);
+
+    const refDatabase = useRef(1);
+    const isVisibleDatabase = RevealOnScroll(refDatabase);
+
+    const refTools = useRef();
+    const isVisibleTools = RevealOnScroll(refTools);
 
     return (
         <section id="skills">
-            <div
-                id="animation-carousel"
-                class="relative w-full"
-                data-carousel="static"
-            >
-                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                    <div
-                        class="hidden duration-200 ease-linear"
-                        data-carousel-item
-                    ></div>
-
-                    <div
-                        class="hidden duration-200 ease-linear"
-                        data-carousel-item
-                    ></div>
-
-                    <div
-                        class="hidden duration-200 ease-linear"
-                        data-carousel-item="active"
-                    ></div>
-
-                    <div
-                        class="hidden duration-200 ease-linear"
-                        data-carousel-item
-                    ></div>
-
-                    <div
-                        class="hidden duration-200 ease-linear"
-                        data-carousel-item
-                    ></div>
+            <div className="flex flex-col  min-w-full mx-auto justify-center items-center scroll-smooth">
+                <div
+                    ref={refLanguage}
+                    className={`transition-opacity ease-in duration-1000 h-screen w-full ${
+                        isVisibleLanguage ? "opacity-100" : "opacity-0"
+                    }`}
+                >
+                    <div className=" h-[15em] mt-[10em] min-w-full relative">
+                        {languages.map((languages) => (
+                            <div
+                                key={languages}
+                                className="py-2 px-1 sm:w-1/2 w-3/4"
+                            >
+                                <div className="bg-gray-800 rounded flex p-4 h-full items-center">
+                                    <CheckCircleIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
+                                    <span className="font-medium text-white">
+                                        {languages}
+                                    </span>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-
-                <button
-                    type="button"
-                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                    data-carousel-prev
+                <div
+                    ref={refFrameworks}
+                    className={`transition-opacity ease-in duration-1000 h-screen w-full ${
+                        isVisibleFramework ? "opacity-100" : "opacity-0"
+                    }`}
                 >
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg
-                            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 6 10"
-                        >
-                            <path
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M5 1 1 5l4 4"
-                            />
-                        </svg>
-                        <span class="sr-only">Previous</span>
-                    </span>
-                </button>
-                <button
-                    type="button"
-                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                    data-carousel-next
+                    <div className=" h-[15em] mt-[10em]">
+                        {frameworks.map((frameworks) => (
+                            <div
+                                key={frameworks}
+                                className="py-2 px-1 sm:w-1/2 w-3/4"
+                            >
+                                <div className="bg-gray-800 rounded flex p-4 h-full items-center">
+                                    <CheckCircleIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
+                                    <span className="font-medium text-white">
+                                        {frameworks}
+                                    </span>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div
+                    ref={refDatabase}
+                    className={`transition-opacity ease-in duration-1000 h-screen w-full ${
+                        isVisibleDatabase ? "opacity-100" : "opacity-0"
+                    }`}
                 >
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg
-                            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 6 10"
+                    {database.map((database) => (
+                        <div
+                            key={database}
+                            className="py-2 px-1 sm:w-1/2 w-3/4"
                         >
-                            <path
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="m1 9 4-4-4-4"
-                            />
-                        </svg>
-                        <span class="sr-only">Next</span>
-                    </span>
-                </button>
+                            <div className="bg-gray-800 rounded flex p-4 h-full items-center">
+                                <CheckCircleIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
+                                <span className="font-medium text-white">
+                                    {database}
+                                </span>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+                <div
+                    ref={refTools}
+                    className={`transition-opacity ease-in duration-1000 h-screen w-full ${
+                        isVisibleTools ? "opacity-100" : "opacity-0"
+                    }`}
+                >
+                    {tools.map((tools) => (
+                        <div key={tools} className="py-2 px-1 sm:w-1/2 w-3/4">
+                            <div className="bg-gray-800 rounded flex p-4 h-full items-center">
+                                <CheckCircleIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
+                                <span className="font-medium text-white">
+                                    {tools}
+                                </span>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     );
