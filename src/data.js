@@ -1,3 +1,24 @@
+import {
+    JavaOriginal,
+    JavascriptOriginal,
+    CplusplusOriginal,
+    SqldeveloperOriginal,
+    Html5Original,
+    Css3Original,
+    SpringOriginal,
+    NodejsOriginal,
+    ExpressOriginal,
+    ReactOriginal,
+    TailwindcssOriginal,
+    GitOriginal,
+    GithubOriginal,
+    HibernateOriginal,
+    PostgresqlOriginal,
+    IntellijOriginal,
+    PostmanOriginal,
+    EclipseOriginal,
+    VscodeOriginal,
+} from "devicons-react";
 /*
 projects
 */
@@ -31,16 +52,94 @@ export const projects = [
 /*
 Skills and tools
 */
-export const languages = ["Java", "JavaScript", "C++", "SQL", "HTML/CSS"];
-
-export const frameworks = [
-    "Spring Boot",
-    "Node",
-    "Express",
-    "React",
-    "Tailwind",
+export const languages = [
+    {
+        title: "Java",
+        icon: JavaOriginal,
+    },
+    {
+        title: "JavaScript",
+        icon: JavascriptOriginal,
+    },
+    {
+        title: "C++",
+        icon: CplusplusOriginal,
+    },
+    {
+        title: "SQL",
+        icon: SqldeveloperOriginal,
+    },
+    {
+        title: "HTML",
+        icon: Html5Original,
+    },
+    {
+        title: "CSS",
+        icon: Css3Original,
+    },
 ];
 
-export const database = ["Git", "Github", "Hibernate", "JPA", "PostgreSQL"];
+export const frameworks = [
+    {
+        title: "Spring Boot",
+        icon: SpringOriginal,
+    },
+    {
+        title: "Node",
+        icon: NodejsOriginal,
+    },
+    {
+        title: "Express",
+        icon: ExpressOriginal,
+    },
+    {
+        title: "React",
+        icon: ReactOriginal,
+    },
+    {
+        title: "Tailwind",
+        icon: TailwindcssOriginal,
+    },
+];
 
-export const tools = ["IntelliJ", "Visual Studio", "Postman", "Eclipse"];
+export const database = [
+    {
+        title: "Git",
+        icon: GitOriginal,
+    },
+    {
+        title: "Github",
+        icon: GithubOriginal,
+    },
+    {
+        title: "Hibernate",
+        icon: HibernateOriginal,
+    },
+    {
+        title: "JPA",
+        icon: SqldeveloperOriginal,
+    },
+    {
+        title: "PostgreSQL",
+        icon: PostgresqlOriginal,
+    },
+];
+
+export const tools = [
+    {
+        title: "IntelliJ",
+        icon: IntellijOriginal,
+    },
+    {
+        title: "Visual Studio",
+        icon: VscodeOriginal,
+    },
+    {
+        title: "Postman",
+        icon: PostmanOriginal,
+    },
+    {
+        title: "Eclipse",
+        icon: EclipseOriginal,
+    },
+];
