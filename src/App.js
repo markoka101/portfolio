@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { DarkThemeToggle, Flowbite } from "flowbite-react";
 
 import About from "./components/About";
-import Navbar from "./components/Navbar";
+import NavbarComponent from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
@@ -11,10 +11,10 @@ import Person from "./components/Person";
 
 export default function App() {
     return (
-        <main className="text-gray-400 bg-stone-400 bg-opacity-75 min-h-screen">
+        <main className="text-gray-300 bg-gradient-to-tr from-stone-400 to-stone-300 bg-opacity-65 min-h-screen">
             <BrowserRouter>
                 <Flowbite>
-                    <Navbar />
+                    <NavbarComponent />
                     <Routes>
                         <Route path="*" element={<About />} />
                         <Route path="projects" element={<Projects />} />
