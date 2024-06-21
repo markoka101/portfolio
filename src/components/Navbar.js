@@ -8,7 +8,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 export default function NavbarComponent() {
     const navigate = useNavigate();
     return (
-        <Navbar className="bg-slate-700 sticky top-0 z-10 justify-between flex min-w-full">
+        <Navbar className="bg-slate-600 sticky top-0 z-10 justify-between flex min-w-full">
             <Navbar.Brand>
                 <button
                     className=" font-medium text-slate-300 hover:text-white mb-1 text-2xl transition-colors duration-300 ease-in-out"
@@ -44,10 +44,9 @@ export default function NavbarComponent() {
                     className="md:hidden lg:hidden mx-2 hover:text-white transition-colors duration-200 ease-in-out text-end text-2xl lg:text-lg md:text-lg flex flex-row justify-end items-center"
                 >
                     Contact Me
-                    <ArrowRightIcon className="w-4 h-5 pt-0.5 ml-1" />
                 </button>
 
-                <div className="flex flex-row justify-end md:my-0 lg:my-0 my-2">
+                <div className="flex flex-row justify-end md:my-0 lg:my-0 my-2 mr-2">
                     <a
                         href="https://www.linkedin.com/in/mark-oka/"
                         className="mx-2 hover:text-white text-gray-400 transition-colors duration-200 ease-in-out flex items-center"
