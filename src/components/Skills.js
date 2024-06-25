@@ -21,11 +21,13 @@ export default function Skills() {
             <div className="flex flex-wrap  min-w-full mx-auto justify-center items-center scroll-smooth">
                 <div
                     ref={refLanguage}
-                    className={`transition-all ease-in-out duration-500 my-20 w-full justify-center items-center flex flex-col ${
+                    className={`transition-all ease-in-out duration-500 my-48 w-full justify-center items-center flex flex-col ${
                         isVisibleLanguage ? "blur-0" : "blur-sm"
                     }`}
                 >
-                    <h1 className="text-white text-3xl">Languages</h1>
+                    <h1 className="text-black text-3xl font-bold">
+                        Programming Languages
+                    </h1>
                     <div className="md:w-3/4 lg:w-3/4 w-full h-3/4 relative  flex flex-wrap justify-center items-center">
                         {languages.map((lang) => {
                             return (
@@ -33,8 +35,8 @@ export default function Skills() {
                                     key={lang.title}
                                     className=" py-3 px-1 sm:w-1/2 w-3/4 "
                                 >
-                                    <div className="bg-gray-400 rounded flex p-4 h-full items-center">
-                                        <lang.icon className="mr-4 text-sm h-screem flex" />
+                                    <div className="bg-gray-500 rounded flex p-5 h-full items-center">
+                                        <lang.icon className="mr-4" size="30" />
                                         <span className="font-medium text-white text-xl">
                                             {lang.title}
                                         </span>
@@ -46,11 +48,11 @@ export default function Skills() {
                 </div>
                 <div
                     ref={refFrameworks}
-                    className={`transition-all ease-in-out duration-500 my-20 w-full justify-center items-center flex flex-col ${
+                    className={`transition-all ease-in-out duration-500 my-44 w-full justify-center items-center flex flex-col ${
                         isVisibleFramework ? "blur-0" : "blur-sm"
                     }`}
                 >
-                    <h1 className="text-white text-3xl">
+                    <h1 className="text-black text-3xl font-bold">
                         Frameworks and Libraries
                     </h1>
                     <div className="md:w-3/4 lg:w-3/4 w-full h-3/4 relative  flex flex-wrap justify-center items-center">
@@ -59,8 +61,8 @@ export default function Skills() {
                                 key={frame.title}
                                 className="py-2 px-1 sm:w-1/2 w-3/4"
                             >
-                                <div className="bg-gray-800 rounded flex p-4 h-full items-center">
-                                    <frame.icon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
+                                <div className="bg-gray-500 rounded flex p-5 h-full items-center">
+                                    <frame.icon className="mr-4" size="30" />
                                     <span className="font-medium text-white">
                                         {frame.title}
                                     </span>
@@ -71,11 +73,11 @@ export default function Skills() {
                 </div>
                 <div
                     ref={refDatabase}
-                    className={`transition-all ease-in-out duration-500 my-20 w-full justify-center items-center flex flex-col ${
+                    className={`transition-all ease-in-out duration-500 my-44 w-full justify-center items-center flex flex-col ${
                         isVisibleDatabase ? "blur-0" : "blur-sm"
                     }`}
                 >
-                    <h1 className="text-white text-3xl">
+                    <h1 className="text-black text-3xl font-bold">
                         Database and Industry Tools
                     </h1>
                     <div className="md:w-3/4 lg:w-3/4 w-full h-3/4 relative  flex flex-wrap justify-center items-center">
@@ -84,8 +86,8 @@ export default function Skills() {
                                 key={data.title}
                                 className="py-2 px-1 sm:w-1/2 w-3/4"
                             >
-                                <div className="bg-gray-800 rounded flex p-4 h-full items-center">
-                                    <data.icon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
+                                <div className="bg-gray-500 rounded flex p-5 h-full items-center">
+                                    <data.icon className="mr-4" size="30" />
                                     <span className="font-medium text-white">
                                         {data.title}
                                     </span>
@@ -96,19 +98,21 @@ export default function Skills() {
                 </div>
                 <div
                     ref={refTools}
-                    className={`transition-all ease-in-out duration-500  my-20 w-full justify-center items-center flex flex-col ${
+                    className={`transition-all ease-in-out duration-500  my-44 w-full justify-center items-center flex flex-col ${
                         isVisibleTools ? "blur-0" : "blur-sm"
                     }`}
                 >
-                    <h1 className="text-white text-3xl">Tools and Software</h1>
+                    <h1 className="text-black text-3xl font-bold">
+                        Tools and Software
+                    </h1>
                     <div className="md:w-3/4 lg:w-3/4 w-full h-3/4 relative  flex flex-wrap justify-center items-center">
                         {tools.map((tool) => (
                             <div
                                 key={tool.title}
                                 className="py-2 px-1 sm:w-1/2 w-3/4"
                             >
-                                <div className="bg-gray-800 rounded flex p-4 h-full items-center">
-                                    <tool.icon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
+                                <div className="bg-gray-500 rounded flex p-5 h-full items-center">
+                                    <tool.icon className="mr-4" size="30" />
                                     <span className="font-medium text-white">
                                         {tool.title}
                                     </span>
