@@ -11,7 +11,7 @@ import Person from "./components/Person";
 
 export default function App() {
     return (
-        <main className="text-gray-300 bg-gradient-to-tr from-stone-400 to-stone-300 bg-opacity-65 min-h-screen">
+        <main className="text-gray-300 bg-gradient-to-tr from-stone-300 to-stone-200 bg-opacity-80 min-h-screen">
             <BrowserRouter>
                 <Flowbite>
                     <NavbarComponent />
