@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 
 import { languages, frameworks, database, tools } from "../data";
 
+import { ChevronDoubleDownIcon } from "@heroicons/react/24/outline";
+
 import RevealOnScroll from "./RevealOnScroll";
 export default function Skills() {
     const refLanguage = useRef();
@@ -16,12 +18,25 @@ export default function Skills() {
     const refTools = useRef();
     const isVisibleTools = RevealOnScroll(refTools);
 
+    const refArrow = useRef();
+    const isVisibleArrows = RevealOnScroll(refArrow);
+
     return (
         <section id="skills" className="flex flex-col min-w-full scroll-smooth">
             <div className="flex flex-wrap  min-w-full mx-auto justify-center items-center scroll-smooth">
+                <div className="flex flex-col w-1/2 border-2 mt-10 bg-gray-600 py-4">
+                    <h1 className="sm:text-4xl text-3xl font-medium mb-4 text-white text-center">
+                        Technologies
+                    </h1>
+                    <div></div>
+                    <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-center text-gray-300">
+                        Scroll to see the different technology I use
+                    </p>
+                </div>
+
                 <div
                     ref={refLanguage}
-                    className={`transition-all ease-in-out duration-500 my-48 w-full justify-center items-center flex flex-col ${
+                    className={`transition-all ease-in-out duration-500 mb-20 mt-20 w-full justify-center items-center flex flex-col ${
                         isVisibleLanguage ? "blur-0" : "blur-sm"
                     }`}
                 >
@@ -46,6 +61,14 @@ export default function Skills() {
                         })}
                     </div>
                 </div>
+                <ChevronDoubleDownIcon
+                    ref={refArrow}
+                    className={`h-12 text-black transition-all ease-in-out duration-500 hidden sm:hidden md:block lg:block ${
+                        isVisibleArrows
+                            ? "opacity-0"
+                            : "opacity-100 animate-pulse"
+                    }`}
+                ></ChevronDoubleDownIcon>
                 <div
                     ref={refFrameworks}
                     className={`transition-all ease-in-out duration-500 my-44 w-full justify-center items-center flex flex-col ${
