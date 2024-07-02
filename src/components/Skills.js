@@ -85,7 +85,7 @@ export default function Skills() {
                             >
                                 <div className="bg-gray-500 rounded flex p-5 h-full items-center">
                                     <frame.icon className="mr-4" size="30" />
-                                    <span className="font-medium text-white">
+                                    <span className="font-medium text-white text-xl">
                                         {frame.title}
                                     </span>
                                 </div>
@@ -110,7 +110,7 @@ export default function Skills() {
                             >
                                 <div className="bg-gray-500 rounded flex p-5 h-full items-center">
                                     <data.icon className="mr-4" size="30" />
-                                    <span className="font-medium text-white">
+                                    <span className="font-medium text-white text-xl">
                                         {data.title}
                                     </span>
                                 </div>
@@ -135,7 +135,7 @@ export default function Skills() {
                             >
                                 <div className="bg-gray-500 rounded flex p-5 h-full items-center">
                                     <tool.icon className="mr-4" size="30" />
-                                    <span className="font-medium text-white">
+                                    <span className="font-medium text-white text-xl">
                                         {tool.title}
                                     </span>
                                 </div>
