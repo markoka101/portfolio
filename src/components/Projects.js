@@ -42,18 +42,20 @@ export default function Projects() {
     };
     return (
         <section id="projects" className="text-gray-400">
-            <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-                <div className="flex flex-col w-full mb-20">
-                    <CodeBracketIcon className="mx-auto inline-block w-10 mb-4" />
-                    <h1 className="sm:text-4xl text-3xl font-medium mb-4 text-white">
-                        My Projects
-                    </h1>
-                    <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-300">
-                        These are some of the projects I am working/worked on.{" "}
-                        <br />I always have more projects in the works!
+            <div className="flex flex-col  min-w-full mx-auto justify-center items-center scroll-smooth">
+                <div className="flex flex-col w-1/2 mt-10 pt-16 pb-10">
+                    <div className="flex flex-row justify-center items-center">
+                        <CodeBracketIcon className="h-16 text-black" />
+                        <h1 className="text-6xl font-bold mb-4 text-black items-center">
+                            Projects
+                        </h1>
+                    </div>
+                    <p className="lg:w-2/3 mx-auto leading-relaxed text-xl text-center text-black">
+                        These are some of the projects I am working/worked on. I
+                        always have more projects in the works!
                     </p>
                 </div>
-                <div>
+                <div className="w-full lg:w-3/4">
                     <Carousel
                         pauseOnHover={true}
                         slideInterval={10000}
