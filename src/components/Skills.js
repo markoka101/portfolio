@@ -33,7 +33,7 @@ export default function Skills() {
                         </h1>
                     </div>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-xl text-center text-black">
-                        Scroll to see the different technology I use
+                        Scroll to see all the tech I use
                     </p>
                     <ChevronDoubleDownIcon
                         className={`h-12 text-black transition-all ease-in-out  py-1 animate-pulse`}
