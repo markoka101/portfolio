@@ -8,7 +8,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 export default function NavbarComponent() {
     const navigate = useNavigate();
     return (
-        <Navbar className="bg-slate-600 sticky top-0 z-10 justify-between flex min-w-full">
+        <Navbar className="!bg-gray-800 !bg-opacity-80 sticky top-0 z-10 justify-between flex min-w-full">
             <Navbar.Brand>
                 <button
                     className=" font-medium text-slate-300 hover:text-white mb-1 text-2xl transition-colors duration-300 ease-in-out"
