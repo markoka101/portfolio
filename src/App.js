@@ -8,10 +8,10 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Person from "./components/Person";
-
+//bg-gradient-to-tr from-stone-300 to-stone-200 bg-opacity-80
 export default function App() {
     return (
-        <main className="text-gray-300 bg-gradient-to-tr from-stone-300 to-stone-200 bg-opacity-80 min-h-screen">
+        <main className="text-gray-300 bg-[url('../public/subtle-prism.svg')] bg-fixed ">
             <BrowserRouter>
                 <Flowbite>
                     <NavbarComponent />
@@ -24,6 +24,11 @@ export default function App() {
                     </Routes>
                 </Flowbite>
             </BrowserRouter>
+            <footer className="bg-black bg-opacity-30 text-white relative bottom-0">
+                <a href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/">
+                    Background by SVGBackgrounds.com
+                </a>
+            </footer>
         </main>
     );
 }
