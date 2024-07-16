@@ -42,15 +42,15 @@ export default function Projects() {
     };
     return (
         <section id="projects" className="text-gray-400">
-            <div className="flex flex-col  min-w-full mx-auto justify-center items-center scroll-smooth">
-                <div className="flex flex-col w-1/2 mt-10 pt-16 pb-10">
+            <div className="flex flex-col  min-w-full mx-auto pt-20 items-center scroll-smooth  min-h-screen">
+                <div className="flex flex-col w-1/2  pb-10">
                     <div className="flex flex-row justify-center items-center">
                         <CodeBracketIcon className="h-16 text-black" />
                         <h1 className="text-6xl font-bold mb-4 text-black items-center">
                             Projects
                         </h1>
                     </div>
-                    <p className="lg:w-2/3 mx-auto leading-relaxed text-xl text-center text-black">
+                    <p className="lg:w-2/3 mx-auto leading-relaxed text-xl text-center text-black font-bold">
                         These are some of the projects I am working/worked on. I
                         always have more projects in the works!
                     </p>
