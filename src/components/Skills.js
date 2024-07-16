@@ -23,7 +23,7 @@ export default function Skills() {
     const isVisibleTools = RevealOnScroll(refTools);
 
     return (
-        <section id="skills" className="flex flex-col min-w-full scroll-smooth">
+        <section id="skills" className="min-h-screen">
             <div className="flex flex-wrap  min-w-full mx-auto justify-center items-center scroll-smooth">
                 <div className="flex flex-col w-1/2 mt-10 pt-16 pb-10">
                     <div className="flex flex-row justify-center items-center">
@@ -32,7 +32,7 @@ export default function Skills() {
                             Technologies
                         </h1>
                     </div>
-                    <p className="lg:w-2/3 mx-auto leading-relaxed text-xl text-center text-black">
+                    <p className="lg:w-2/3 mx-auto leading-relaxed text-xl text-center text-black font-bold">
                         Scroll to see all the tech I use
                     </p>
                     <ChevronDoubleDownIcon
@@ -56,7 +56,7 @@ export default function Skills() {
                                     key={lang.title}
                                     className=" py-3 px-1 sm:w-1/2 w-3/4 "
                                 >
-                                    <div className="bg-gray-500 rounded flex p-5 h-full items-center">
+                                    <div className="bg-black bg-opacity-70 rounded flex p-5 h-full items-center">
                                         <lang.icon className="mr-4" size="30" />
                                         <span className="font-medium text-white text-xl">
                                             {lang.title}
@@ -83,7 +83,7 @@ export default function Skills() {
                                 key={frame.title}
                                 className="py-2 px-1 sm:w-1/2 w-3/4"
                             >
-                                <div className="bg-gray-500 rounded flex p-5 h-full items-center">
+                                <div className="bg-black bg-opacity-70 rounded flex p-5 h-full items-center">
                                     <frame.icon className="mr-4" size="30" />
                                     <span className="font-medium text-white text-xl">
                                         {frame.title}
@@ -108,7 +108,7 @@ export default function Skills() {
                                 key={data.title}
                                 className="py-2 px-1 sm:w-1/2 w-3/4"
                             >
-                                <div className="bg-gray-500 rounded flex p-5 h-full items-center">
+                                <div className="bg-black bg-opacity-70 rounded flex p-5 h-full items-center">
                                     <data.icon className="mr-4" size="30" />
                                     <span className="font-medium text-white text-xl">
                                         {data.title}
@@ -133,7 +133,7 @@ export default function Skills() {
                                 key={tool.title}
                                 className="py-2 px-1 sm:w-1/2 w-3/4"
                             >
-                                <div className="bg-gray-500 rounded flex p-5 h-full items-center">
+                                <div className="bg-black bg-opacity-70 rounded flex p-5 h-full items-center">
                                     <tool.icon className="mr-4" size="30" />
                                     <span className="font-medium text-white text-xl">
                                         {tool.title}
