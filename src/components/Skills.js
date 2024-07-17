@@ -27,7 +27,7 @@ export default function Skills() {
             <div className="flex flex-wrap  min-w-full mx-auto justify-center items-center scroll-smooth">
                 <div className="flex flex-col w-1/2 mt-10 pt-16 pb-10">
                     <div className="flex flex-row justify-center items-center">
-                        <CommandLineIcon className="h-16 text-green-900" />
+                        <CommandLineIcon className="h-16 text-black" />
                         <h1 className=" text-6xl font-bold mb-4 text-black text-center mx-2">
                             Technologies
                         </h1>
@@ -42,7 +42,7 @@ export default function Skills() {
 
                 <div
                     ref={refLanguage}
-                    className={`transition-all ease-in-out duration-500 mb-20 mt-20 w-full justify-center items-center flex flex-col ${
+                    className={`transition-all ease-in-out duration-500 mb-20 mt-5  w-full justify-center items-center flex flex-col ${
                         isVisibleLanguage ? "blur-0" : "blur-[2px]"
                     }`}
                 >
