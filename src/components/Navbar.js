@@ -49,13 +49,13 @@ export default function NavbarComponent() {
                 <div className="flex flex-row justify-end md:my-0 lg:my-0 my-2 mr-2">
                     <a
                         href="https://www.linkedin.com/in/mark-oka/"
-                        className="mx-2 hover:text-white text-gray-400 transition-colors duration-200 ease-in-out flex items-center"
+                        className="mx-2 hover:text-white text-slate-300 transition-colors duration-200 ease-in-out flex items-center"
                     >
                         <FontAwesomeIcon icon={faLinkedin} size="2x" />
                     </a>
                     <a
                         href="https://github.com/markoka101"
-                        className="md:ml-2 lg:ml-2 ml-4 hover:text-white text-gray-400 transition-colors duration-200 ease-in-out items-center flex"
+                        className="md:ml-2 lg:ml-2 ml-4 hover:text-white text-slate-300 transition-colors duration-200 ease-in-out items-center flex"
                     >
                         <FontAwesomeIcon icon={faGithub} size="2x" />
                     </a>
@@ -63,10 +63,10 @@ export default function NavbarComponent() {
 
                 <button
                     onClick={() => navigate("/contact")}
-                    className="items-center border-0 py-1 focus:outline-none hover:bg-slate-700 text-gray-300 hover:text-white rounded text-lg mt-2 md:mt-1 hidden md:inline-flex lg:inline-flex transition-colors duration-300 ease-in-out"
+                    className="items-center justify-center border-0  text-slate-300 hover:text-white rounded text-lg  hidden md:inline-flex lg:inline-flex transition-colors duration-300 ease-in-out"
                 >
                     Contact Me
-                    <ArrowRightIcon className="w-4 h-6 pt-0.5 ml-1" />
+                    <ArrowRightIcon className="w-5 h-5 ml-1 mt-1" />
                 </button>
             </Navbar.Collapse>
         </Navbar>
