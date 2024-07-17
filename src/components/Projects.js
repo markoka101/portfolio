@@ -41,7 +41,7 @@ export default function Projects() {
         },
     };
     return (
-        <section id="projects" className="text-gray-400">
+        <section id="projects" className="text-gray-400 my-5">
             <div className="flex flex-col  min-w-full mx-auto pt-20 items-center scroll-smooth  ">
                 <div className="flex flex-col w-1/2  pb-10">
                     <div className="flex flex-row justify-center items-center">
@@ -73,7 +73,7 @@ export default function Projects() {
                             >
                                 <div className="m-2">
                                     <div className="flex flex-col px-8 py-8 m-0  w-full h-[40vh] border-4 border-gray-800 bg-gray-900 hover:bg-slate-900 hover:border-slate-400 items-center justify-center rounded-xl transition-all duration-300 ease-in-out">
-                                        <h2 className="tracking-widest text-sm font-medium text-green-400 mb-1">
+                                        <h2 className="tracking-widest text-sm font-medium text-green-400 mb-1 text-center">
                                             {project.subtitle}
                                         </h2>
                                         <h1 className="text-lg font-medium text-white mb-3">
