@@ -38,10 +38,7 @@ export default function Contact() {
     }
 
     return (
-        <section
-            id="contact"
-            className="relative min-h-[91vh] flex justify-center"
-        >
+        <section id="contact" className="flex justify-center">
             <div className="container px-5 py-10 my-16 mx-auto flex sm:flex-nowrap flex-wrap">
                 <form
                     netlify

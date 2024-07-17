@@ -42,7 +42,7 @@ export default function Projects() {
     };
     return (
         <section id="projects" className="text-gray-400">
-            <div className="flex flex-col  min-w-full mx-auto pt-20 items-center scroll-smooth  min-h-[92vh]">
+            <div className="flex flex-col  min-w-full mx-auto pt-20 items-center scroll-smooth  ">
                 <div className="flex flex-col w-1/2  pb-10">
                     <div className="flex flex-row justify-center items-center">
                         <CodeBracketIcon className="h-16 text-black" />
