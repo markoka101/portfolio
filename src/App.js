@@ -24,10 +24,10 @@ export default function App() {
                     </Routes>
                 </Flowbite>
             </BrowserRouter>
-            <footer className="bg-black bg-opacity-25 text-white  mt-auto bottom-0">
+            <footer className="bg-black bg-opacity-25 text-white  mt-auto bottom-0 w-[14rem] self-end">
                 <a
                     href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/ "
-                    className="text-xs pl-1"
+                    className="text-xs float-right pr-2"
                 >
                     Background by SVGBackgrounds.com
                 </a>
