@@ -11,7 +11,7 @@ import Person from "./components/Person";
 
 export default function App() {
     return (
-        <main className="text-gray-300 bg-[url('../public/subtle-prism.svg')] bg-fixed min-h-screen flex flex-col relative">
+        <main className="text-gray-300 bg-[url('../public/subtle-prism.svg')] bg-fixed min-h-screen flex flex-col scroll-smooth">
             <BrowserRouter>
                 <Flowbite>
                     <NavbarComponent />
