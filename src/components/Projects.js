@@ -17,8 +17,8 @@ export default function Projects() {
         },
         indicators: {
             active: {
-                off: "bg-white/50 hover:bg-white dark:bg-gray-800/50 dark:hover:bg-gray-800",
-                on: "bg-white dark:bg-gray-800",
+                off: "bg-gray-800/50 hover:bg-gray-800",
+                on: "bg-gray-800",
             },
             base: "h-3 w-3 rounded-full",
             wrapper:
@@ -32,8 +32,8 @@ export default function Projects() {
             },
         },
         control: {
-            base: "inline-flex h-[40vh] lg:opacity-100 md:h-8 lg:h-8 w-8 items-center justify-center rounded-xl md:bg-white/30 lg:bg-white/30 md:group-hover:bg-white/50 lg:group-hover:bg-white/50 group-focus:outline-none md:dark:bg-gray-800/30 md:dark:group-hover:bg-gray-800/60 lg:dark:bg-gray-800/30 lg:dark:group-hover:bg-gray-800/60 dark:bg-transparent sm:h-10 sm:w-10",
-            icon: "h-5 w-5 text-white md:dark:text-gray-700 lg:dark:text-gray-700 sm:h-6 sm:w-6",
+            base: "inline-flex h-[40vh] lg:opacity-100 md:h-8 lg:h-8 w-8 items-center justify-center rounded-xl  group-focus:outline-none md:bg-gray-800/30 md:group-hover:bg-gray-800/60 lg:bg-gray-800/30 lg:group-hover:bg-gray-800/60 bg-transparent sm:h-10 sm:w-10",
+            icon: "h-5 w-5 text-white md:text-gray-700 lg:text-gray-700 sm:h-6 sm:w-6",
         },
         scrollContainer: {
             base: "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth rounded-lg",
@@ -50,7 +50,7 @@ export default function Projects() {
                             Projects
                         </h1>
                     </div>
-                    <p className="lg:w-2/3 mx-auto leading-relaxed text-xl text-center text-black font-bold">
+                    <p className="lg:w-full mx-auto leading-relaxed text-xl text-center text-black font-bold">
                         These are some of the projects I am working/worked on. I
                         always have more projects in the works!
                     </p>
