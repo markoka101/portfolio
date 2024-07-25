@@ -22,7 +22,7 @@ export default function Projects() {
             },
             base: "h-3 w-3 rounded-full",
             wrapper:
-                "absolute bottom--8 left-1/2 flex -translate-x-1/2 space-x-3",
+                "absolute bottom--8 left-1/2 flex -translate-x-1/2 space-x-3 mt-2",
         },
         item: {
             base: "absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2  ",
