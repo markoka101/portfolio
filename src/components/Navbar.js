@@ -2,7 +2,7 @@ import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Navbar, NavbarToggle } from "flowbite-react";
+import { Navbar } from "flowbite-react";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function NavbarComponent() {
@@ -42,7 +42,7 @@ export default function NavbarComponent() {
             base: "block py-2 pl-3 pr-4 md:p-0",
             active: {
                 on: "bg-cyan-700 text-white md:bg-transparent md:text-cyan-700",
-                off: "border-b border-gray-700 text-gray-400 dark:hover:bg-gray-700 hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-white",
+                off: "border-b border-gray-700 text-gray-400 bg-gray-700 hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-white",
             },
             disabled: {
                 on: "hover:cursor-not-allowed text-gray-600",

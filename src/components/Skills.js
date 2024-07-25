@@ -1,11 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useRef } from "react";
 
 import { languages, frameworks, database, tools } from "../data";
 
 import {
     ChevronDoubleDownIcon,
     CommandLineIcon,
-    ComputerDesktopIcon,
 } from "@heroicons/react/24/outline";
 
 import RevealOnScroll from "./RevealOnScroll";
