@@ -5,7 +5,7 @@ export default function About() {
     const navigate = useNavigate();
     return (
         <section id="about" className="flex justify-center">
-            <div className="container mx-auto flex px-10 py-10 my-28 md:flex-row flex-col items-center w-11/12 border-4 bg-black bg-opacity-50 rounded-xl">
+            <div className="container mx-auto flex px-10 py-10 mt-12 sm:mt-28 md:mt-28 lg:mt-28 mb-12 md:flex-row flex-col items-center w-11/12 border-4 bg-black bg-opacity-50 rounded-xl min-h-[65vh]">
                 <div className="flex-1 lg:flex-grow md:w-full lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-10 md:mb-0 items-center text-center p-3">
                     <h1 className="title-font text-3xl mb-2 font-medium text-white">
                         Mark Oka
