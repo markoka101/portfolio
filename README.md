@@ -1,16 +1,12 @@
 # Portfolio
+## Recently Reworked! 🎉🎉
 
 ### Built With
 
 -   Javascript
 -   React
 -   Tailwind
--   HeadlessUI
-
-### Updates
-
--   Currently reworking the Portfolio in a different branch
-    -   Check the "updated" branch to see my latest commits
+-   Flowbite
 
 ## Author
 
