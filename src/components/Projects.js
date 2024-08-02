@@ -41,16 +41,16 @@ export default function Projects() {
         },
     };
     return (
-        <section id="projects" className="text-gray-400 my-5">
-            <div className="flex flex-col  min-w-full mx-auto pt-20 items-center scroll-smooth  ">
-                <div className="flex flex-col w-1/2  pb-10">
+        <section id="projects" className="text-gray-400">
+            <div className="flex flex-col  min-w-full mx-auto pt-5 sm:pt-20 md:pt-20 lg:pt-20 my-10 items-center scroll-smooth  ">
+                <div className="flex flex-col w-3/4 sm:w-1/2 md:w-1/2 lg:w-1/2 pb-10">
                     <div className="flex flex-row justify-center items-center">
                         <CodeBracketIcon className="h-16 text-black" />
                         <h1 className="text-6xl font-bold mb-4 text-black items-center">
                             Projects
                         </h1>
                     </div>
-                    <p className="lg:w-full mx-auto leading-relaxed text-xl text-center text-black font-bold">
+                    <p className="w-full mx-auto leading-relaxed text-md sm:text-xl md:text-xl lg:text-xl text-center text-black font-bold">
                         These are some of the projects I am working/worked on. I
                         always have more projects in the works!
                     </p>
@@ -63,7 +63,7 @@ export default function Projects() {
                         theme={customTheme}
                         slide={true}
                     >
-                        {projects.map((project, i) => (
+                        {projects.map((project) => (
                             <a
                                 href={project.link}
                                 target="_blank"
