@@ -44,9 +44,9 @@ export default function Projects() {
         <section id="projects" className="text-gray-400">
             <div className="flex flex-col  min-w-full mx-auto pt-5 sm:pt-20 md:pt-20 lg:pt-20 my-10 items-center scroll-smooth  ">
                 <div className="flex flex-col w-3/4 sm:w-1/2 md:w-1/2 lg:w-1/2 pb-10">
-                    <div className="flex flex-row justify-center items-center">
-                        <CodeBracketIcon className="h-16 text-black" />
-                        <h1 className="text-6xl font-bold mb-4 text-black items-center">
+                    <div className="flex flex-row justify-center items-center mb-4">
+                        <CodeBracketIcon className="h-16 text-black " />
+                        <h1 className="text-6xl font-bold  text-black   h-16">
                             Projects
                         </h1>
                     </div>
