@@ -32,8 +32,8 @@ export default function Projects() {
             },
         },
         control: {
-            base: "inline-flex h-[40vh] lg:opacity-100 md:h-8 lg:h-8 w-8 items-center justify-center rounded-xl  group-focus:outline-none md:bg-gray-800/30 md:group-hover:bg-gray-800/60 lg:bg-gray-800/30 lg:group-hover:bg-gray-800/60 bg-transparent sm:h-10 sm:w-10",
-            icon: "h-5 w-5 text-white md:text-gray-700 lg:text-gray-700 sm:h-6 sm:w-6",
+            base: "inline-flex h-[40vh] lg:opacity-100 md:h-8 lg:h-8 w-8  ease-in-out duration-300 items-center justify-center rounded-xl group-focus:outline-none md:bg-gray-800/30 md:group-hover:bg-gray-800/60 lg:bg-gray-800/30 lg:group-hover:bg-gray-800/60 bg-transparent sm:h-10 sm:w-10",
+            icon: "h-5 w-5 text-white ease-in-out duration-300  md:text-gray-700 md:hover:text-gray-200 lg:text-gray-700 lg:hover:text-gray-200 sm:h-6 sm:w-6",
         },
         scrollContainer: {
             base: "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth rounded-lg",
