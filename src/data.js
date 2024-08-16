@@ -47,6 +47,12 @@ export const projects = [
         description: "Lesson plan I developed for my students",
         link: "https://github.com/markoka101/lessons",
     },
+    {
+        title: "See More",
+        subtitle: "",
+        description: "See all of my projects on GitHub",
+        link: "https://github.com/markoka101",
+    },
 ];
 
 /*
