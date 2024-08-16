@@ -72,7 +72,7 @@ export default function NavbarComponent() {
                     onClick={() => navigate("/projects")}
                     className="mx-2 hover:text-white transition-colors duration-200 ease-in-out text-end text-2xl lg:text-lg md:text-lg"
                 >
-                    Past Work
+                    Work
                 </button>
                 <button
                     onClick={() => navigate("/skills")}

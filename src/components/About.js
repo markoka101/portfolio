@@ -30,13 +30,13 @@ export default function About() {
                             onClick={() => navigate("/projects")}
                             className="inline-flex text-gray-400 justify-center bg-gray-800 my-1 md:my-0.5 lg:my-0.5 md:mr-2 lg:mr-2 py-2 px-6 focus:outline-none border-2 border-transparent hover:border-slate-400 hover:text-white rounded-xl text-lg transition-all duration-200 ease-in"
                         >
-                            See Past Work
+                            Work And Projects
                         </button>
                         <button
                             onClick={() => navigate("/about-me")}
                             className="inline-flex text-gray-400 justify-center bg-gray-800 my-1 md:my-0.5 lg:my-0.5 md:mr-2 lg:mr-2 py-2 px-6 focus:outline-none border-2 border-transparent hover:border-slate-400 hover:text-white rounded-xl text-lg transition-all duration-200 ease-in"
                         >
-                            Learn About Me
+                            About Me
                         </button>
                         <a
                             href="./mark-oka-resume.pdf"
@@ -44,7 +44,7 @@ export default function About() {
                             rel="noreferrer"
                             className="inline-flex text-gray-400 justify-center bg-gray-800 my-1 md:my-0.5 lg:my-0.5 md:mr-2 lg:mr-2 py-2 px-6 focus:outline-none border-2 border-transparent hover:border-slate-400 hover:text-white rounded-xl text-lg transition-all duration-200 ease-in"
                         >
-                            Open My Resume
+                            Resume
                         </a>
                     </div>
                 </div>
