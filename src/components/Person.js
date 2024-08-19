@@ -12,12 +12,12 @@ export default function Person() {
                         Background
                     </h2>
                     <p className="mb-4 leading-relaxed text-gray-200 text-left">
-                        I was born in Sao Paulo Brazil and moved to New York
-                        shortly after I was born. I have dual citizenship of
-                        Brazil and the United States. I come from a very diverse
-                        background where my paternal grandparents are from Japan
-                        and Texas. I also have three cats named Throatcuttah,
-                        Hades, and Salem.
+                        I was born in Sao Paulo and moved to New York shortly
+                        after I was born. I have dual citizenship of Brazil and
+                        the United States. I come from a very diverse background
+                        where my paternal grandparents are from Japan and Texas.
+                        I also have three cats named Throatcuttah, Hades, and
+                        Salem.
                     </p>
                     <h3 className="sm:text-2x1 mb-1 font-medium text-white">
                         Hobbies/Interests
@@ -28,10 +28,10 @@ export default function Person() {
                         -As a software engineer, I am legally required to be a
                         gamer <br />
                         -I have an extensive collection of board games and
-                        organize game nights with friends and family <br />
+                        organize game nights <br />
                         -I love traveling. Some of the places I've visited
                         include Kenya, Japan, England, and Costa Rica <br />
-                        -I spend a lot of time helping my family with home
+                        -I spend a lot of time helping others with home
                         improvement projects <br />
                         -I am passionate about aviation and as a kid, I wanted
                         to be a pilot
