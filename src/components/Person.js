@@ -23,10 +23,10 @@ export default function Person() {
                         Hobbies/Interests
                     </h3>
                     <p className="leading-relaxed text-gray-200 text-left">
-                        -I am a guitarist who has played in metal and rock bands{" "}
-                        <br />
                         -As a software engineer, I am legally required to be a
                         gamer <br />
+                        -I am a guitarist who has played in metal and rock bands{" "}
+                        <br />
                         -I have an extensive collection of board games and
                         organize game nights <br />
                         -I love traveling. Some of the places I've visited
