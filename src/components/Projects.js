@@ -51,8 +51,8 @@ export default function Projects() {
                         </h1>
                     </div>
                     <p className="w-full mx-auto leading-relaxed text-md sm:text-xl md:text-xl lg:text-xl text-center text-black font-bold">
-                        These are some of the projects I am working/worked on. I
-                        always have more projects in the works!
+                        You can click on the cards to see the projects. I always
+                        have more projects in the works! <br />
                     </p>
                 </div>
                 <div className="w-full lg:w-3/4">
