@@ -14,10 +14,13 @@ export default function About() {
                         </p>
                     </h1>
                     <p className="mb-6 leading-relaxed text-gray-200 text-left">
-                        I am a software engineer located in Brooklyn, NY. My
-                        software development skills are up-to-date with the
-                        latest standards and practices. I possess proficiency in
-                        working independently or within a team environment.
+                        I am a software engineer living in Brooklyn, NY. I am a
+                        lifelong learner that always keeps up to date with
+                        current tech and practices. I love what I do and am
+                        always interested in hearing about new opportunities. If
+                        you might be interested in collaborating, or hiring me
+                        for an independent project, please feel free to contact
+                        me.
                     </p>
                     <div className="flex flex-col md:flex-row lg:flex-row justify-center">
                         <button
