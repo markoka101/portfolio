@@ -53,9 +53,9 @@ export default function About() {
                 </div>
                 <div className="hidden lg:block lg:max-w-md lg:w-full my-1  p-5">
                     <img
-                        className="w-2/3 h-1/2 float-right border-4 border-opacity-70 border-gray-600 "
+                        className=" float-right border-2 border-gray-900 rounded-md "
                         alt="me"
-                        src="./pls.jpg"
+                        src="./portrait.jpeg"
                     />
                 </div>
             </div>
