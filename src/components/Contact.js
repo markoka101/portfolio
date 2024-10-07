@@ -1,9 +1,13 @@
 import React from "react";
+import { Alert } from "flowbite-react";
 
 export default function Contact() {
     const [name, setName] = React.useState("");
     const [email, setEmail] = React.useState("");
     const [message, setMessage] = React.useState("");
+    const [allFields, setAllFields] = React.useState(false);
+    const [sent, setSent] = React.useState(false);
+    const [errBanner, setErrBanner] = React.useState(false);
 
     function encode(data) {
         return Object.keys(data)
@@ -20,7 +24,7 @@ export default function Contact() {
         e.preventDefault();
 
         if (name === "" || email === "" || message === "") {
-            alert("All fields must be filled");
+            setAllFields(true);
             return;
         }
 
@@ -30,15 +34,38 @@ export default function Contact() {
             body: encode({ "form-name": "contact", name, email, message }),
         })
             .then(() => {
-                alert("Message Sent");
+                setErrBanner(false);
+                setAllFields(false);
+                setSent(true);
             })
-            .catch(() => {
-                alert("Something Went Wrong");
+            .catch((err) => {
+                setSent(false);
+                setAllFields(false);
+                setErrBanner(true);
+                console.log(err);
             });
     }
 
     return (
-        <section id="contact" className="flex justify-center">
+        <section id="contact" className="flex flex-col justify-center">
+            {sent === true ? (
+                <Alert color="success" onDismiss={() => setSent(false)}>
+                    <p className="font-medium">Message Sent!</p>
+                </Alert>
+            ) : null}
+
+            {errBanner === true ? (
+                <Alert color="failure" onDismiss={() => setErrBanner(false)}>
+                    <p className="font-medium">Something Went Wrong!</p>
+                </Alert>
+            ) : null}
+
+            {allFields === true ? (
+                <Alert color="failure" onDismiss={() => setAllFields(false)}>
+                    <p className="font-medium">Please fill in all fields!</p>
+                </Alert>
+            ) : null}
+
             <div className="container px-5 py-5 sm:py-10 md:py-10 lg:py-10 my-5 sm:my-16 md:my-16 lg:my-16 mx-auto flex sm:flex-nowrap flex-wrap">
                 <form
                     netlify
