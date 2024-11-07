@@ -32,7 +32,7 @@ export default function NavbarComponent() {
         },
         collapse: {
             base: "w-full md:block md:w-auto",
-            list: "mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium",
+            list: "mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-5 md:text-sm md:font-medium",
             hidden: {
                 on: "hidden",
                 off: "",
@@ -70,25 +70,25 @@ export default function NavbarComponent() {
             <Navbar.Collapse>
                 <button
                     onClick={() => navigate("/projects")}
-                    className="mx-2 hover:text-white transition-colors duration-200 ease-in-out text-end text-2xl lg:text-lg md:text-lg"
+                    className=" hover:text-white transition-colors duration-200 ease-in-out text-end text-2xl lg:text-lg md:text-lg"
                 >
                     Work
                 </button>
                 <button
                     onClick={() => navigate("/skills")}
-                    className="mx-2 hover:text-white transition-colors duration-200 ease-in-out text-end text-2xl lg:text-lg md:text-lg"
+                    className=" hover:text-white transition-colors duration-200 ease-in-out text-end text-2xl lg:text-lg md:text-lg"
                 >
                     Skills
                 </button>
                 <button
                     onClick={() => navigate("/about-me")}
-                    className="mx-2 hover:text-white transition-colors duration-200 ease-in-out text-end text-2xl lg:text-lg md:text-lg"
+                    className=" hover:text-white transition-colors duration-200 ease-in-out text-end text-2xl lg:text-lg md:text-lg"
                 >
                     About Me
                 </button>
                 <button
                     onClick={() => navigate("/contact")}
-                    className="md:hidden lg:hidden mx-2 hover:text-white transition-colors duration-200 ease-in-out text-end text-2xl lg:text-lg md:text-lg flex flex-row justify-end items-center"
+                    className="md:hidden lg:hidden  hover:text-white transition-colors duration-200 ease-in-out text-end text-2xl lg:text-lg md:text-lg flex flex-row justify-end items-center"
                 >
                     Contact Me
                 </button>
@@ -102,7 +102,7 @@ export default function NavbarComponent() {
                     </a>
                     <a
                         href="https://github.com/markoka101"
-                        className="md:ml-2 lg:ml-2 ml-4 hover:text-white text-slate-300 transition-colors duration-200 ease-in-out items-center flex"
+                        className="md:ml-2 lg:ml-2 ml-2 hover:text-white text-slate-300 transition-colors duration-200 ease-in-out items-center flex"
                     >
                         <FontAwesomeIcon icon={faGithub} size="2x" />
                     </a>
@@ -113,7 +113,7 @@ export default function NavbarComponent() {
                     className="items-center justify-center border-0  text-slate-300 hover:text-white rounded text-lg  hidden md:inline-flex lg:inline-flex transition-colors duration-300 ease-in-out"
                 >
                     Contact Me
-                    <ArrowRightIcon className="w-5 h-5 ml-1 mt-1" />
+                    <ArrowRightIcon className="w-5 h-5 ml-1 mt-1  sm:block" />
                 </button>
             </Navbar.Collapse>
         </Navbar>
