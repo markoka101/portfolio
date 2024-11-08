@@ -3,7 +3,7 @@ import React from "react";
 export default function Person() {
     return (
         <section id="person" className=" justify-center flex">
-            <div className="container mx-auto flex px-5 py-10 my-20 md:flex-row flex-col items-center  border-4 bg-black bg-opacity-50 rounded-lg justify-center">
+            <div className="container mx-auto flex px-10 py-10 mt-12 sm:mt-28 md:mt-28 lg:mt-28 mb-12 md:flex-row flex-col items-center w-11/12 border-4 bg-black bg-opacity-50 rounded-xl min-h-[65vh]">
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 className="sm:text-4xl mb-5 font-medium text-white">
                         About Me
