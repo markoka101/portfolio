@@ -70,25 +70,22 @@ export default function NavbarComponent() {
             <Navbar.Collapse>
                 <button
                     onClick={() => navigate("/projects")}
-                    className=" hover:text-white transition-colors duration-200 ease-in-out text-end text-2xl lg:text-lg md:text-lg"
+                    className="btn-nav"
                 >
                     Work
                 </button>
-                <button
-                    onClick={() => navigate("/skills")}
-                    className=" hover:text-white transition-colors duration-200 ease-in-out text-end text-2xl lg:text-lg md:text-lg"
-                >
+                <button onClick={() => navigate("/skills")} className="btn-nav">
                     Skills
                 </button>
                 <button
                     onClick={() => navigate("/about-me")}
-                    className=" hover:text-white transition-colors duration-200 ease-in-out text-end text-2xl lg:text-lg md:text-lg"
+                    className="btn-nav"
                 >
                     About Me
                 </button>
                 <button
                     onClick={() => navigate("/contact")}
-                    className="md:hidden lg:hidden  hover:text-white transition-colors duration-200 ease-in-out text-end text-2xl lg:text-lg md:text-lg flex flex-row justify-end items-center"
+                    className="md:hidden lg:hiddenbtn-nav flex flex-row justify-end items-center"
                 >
                     Contact Me
                 </button>
