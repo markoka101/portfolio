@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Person from "./components/Person";
+import Testimonials from "./components/Testimonials";
 
 export default function App() {
     return (
@@ -17,6 +18,7 @@ export default function App() {
                     <NavbarComponent />
                     <Routes>
                         <Route path="*" element={<About />} />
+                        <Route path="testimonials" element={<Testimonials />} />
                         <Route path="projects" element={<Projects />} />
                         <Route path="skills" element={<Skills />} />
                         <Route path="about-me" element={<Person />} />
