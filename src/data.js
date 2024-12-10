@@ -18,6 +18,7 @@ import {
     PostmanOriginal,
     EclipseOriginal,
     VscodeOriginal,
+    DockerPlain,
 } from "devicons-react";
 /*
 projects
@@ -147,5 +148,9 @@ export const tools = [
     {
         title: "Eclipse",
         icon: EclipseOriginal,
+    },
+    {
+        title: "Docker",
+        icon: DockerPlain,
     },
 ];
