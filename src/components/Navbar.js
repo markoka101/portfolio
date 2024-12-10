@@ -83,12 +83,7 @@ export default function NavbarComponent() {
                 >
                     About Me
                 </button>
-                <button
-                    onClick={() => navigate("/testimonials")}
-                    className="btn-nav"
-                >
-                    Testimonials
-                </button>
+
                 <button
                     onClick={() => navigate("/contact")}
                     className="md:hidden lg:hidden hover:text-white transition-colors duration-200 ease-in-out text-end text-2xl"
