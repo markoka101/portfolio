@@ -16,7 +16,7 @@ export default function Testimonials() {
                         <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
                     </svg>
                     <Blockquote>
-                        <p className="text-2xl font-medium italic text-white">
+                        <p className="text-sm sm:text-xl md:text-2xl lg:text-2xl font-medium italic text-white">
                             I had the pleasure of working with Mark Oka, and I
                             can confidently say that his skills in building and
                             managing my portfolio website were exceptional.
@@ -37,12 +37,15 @@ export default function Testimonials() {
                         </p>
                     </Blockquote>
                     <figcaption className="mt-6 flex items-center justify-center space-x-3">
-                        <Avatar
-                            rounded
-                            size="md"
-                            img="./taylor-avatar.jpg"
-                            alt="profile picture"
-                        />
+                        <div>
+                            <Avatar
+                                rounded
+                                className="h-10 w-10"
+                                img="./taylor-avatar.jpg"
+                                alt="Taylor Morales"
+                            />
+                        </div>
+
                         <div className="flex items-center divide-x-2 divide-gray-300">
                             <cite className="pr-3 font-medium text-white">
                                 Taylor Morales
