@@ -12,7 +12,7 @@ import Testimonials from "./components/Testimonials";
 
 export default function App() {
     return (
-        <main className="text-gray-300 bg-[url('../public/subtle-prism.svg')] min-h-[100lvh] flex flex-col  ">
+        <main className="text-gray-300 bg-[url('../public/subtle-prism.svg')] min-h-[100vh] flex flex-col">
             <BrowserRouter>
                 <Flowbite>
                     <NavbarComponent />
