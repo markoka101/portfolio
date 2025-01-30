@@ -51,7 +51,7 @@ export default function About() {
                         </a>
                     </div>
                 </div>
-                <div className="hidden lg:block lg:max-w-md lg:w-full my-1  p-5">
+                <div className="hidden lg:block lg:max-w-sm my-1  p-5">
                     <img
                         className=" float-right border-2 border-gray-900 rounded-md "
                         alt="me"
