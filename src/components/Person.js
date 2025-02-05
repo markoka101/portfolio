@@ -25,7 +25,7 @@ export default function Person() {
                     <p className="leading-relaxed text-gray-200 text-left">
                         -As a software engineer, I am legally required to be a
                         gamer <br />
-                        -I am a guitarist who has played in metal and rock bands{" "}
+                        -I am a guitarist who has played in metal and rock bands
                         <br />
                         -I have an extensive collection of board games and
                         organize game nights <br />
