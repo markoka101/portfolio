@@ -23,7 +23,11 @@ export default function Contact() {
     function handleSubmit(e) {
         e.preventDefault();
 
-        if (name === "" || email === "" || message === "") {
+        if (
+            name.trim().length === 0 ||
+            email.trim().length === 0 ||
+            message.trim().length === 0
+        ) {
             setAllFields(true);
             return;
         }
