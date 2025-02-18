@@ -1,4 +1,3 @@
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -81,7 +80,7 @@ export default function NavbarComponent() {
                     onClick={() => navigate("/about-me")}
                     className="btn-nav"
                 >
-                    About Me
+                    About
                 </button>
                 <button
                     onClick={() => navigate("/testimonials")}
@@ -93,7 +92,13 @@ export default function NavbarComponent() {
                     onClick={() => navigate("/contact")}
                     className="md:hidden lg:hidden hover:text-white transition-colors duration-200 ease-in-out text-end text-2xl"
                 >
-                    Contact Me
+                    Contact
+                </button>
+                <button
+                    onClick={() => navigate("/contact")}
+                    className="items-center justify-center border-0  text-slate-300 hover:text-white rounded text-lg  hidden md:inline-flex lg:inline-flex transition-colors duration-300 ease-in-out"
+                >
+                    Contact
                 </button>
 
                 <div className="flex flex-row justify-end md:my-0 lg:my-0 my-2 mr-2">
@@ -110,14 +115,6 @@ export default function NavbarComponent() {
                         <FontAwesomeIcon icon={faGithub} size="2x" />
                     </a>
                 </div>
-
-                <button
-                    onClick={() => navigate("/contact")}
-                    className="items-center justify-center border-0  text-slate-300 hover:text-white rounded text-lg  hidden md:inline-flex lg:inline-flex transition-colors duration-300 ease-in-out"
-                >
-                    Contact Me
-                    <ArrowRightIcon className="w-5 h-5 ml-1 mt-1  sm:block" />
-                </button>
             </Navbar.Collapse>
         </Navbar>
     );
