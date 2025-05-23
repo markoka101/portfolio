@@ -1,9 +1,8 @@
-import React from 'react';
 import { Blockquote, Avatar } from 'flowbite-react';
 
 export default function Testimonials() {
 	return (
-		<section id="testimonials" className="flex justify-center">
+		<section id="testimonials" className="animate-fadeIn flex justify-center">
 			<div className="container mx-auto mb-12 mt-12 flex min-h-[65vh] w-11/12 flex-col items-center rounded-xl border-4 bg-black bg-opacity-50 px-10 py-10 sm:mt-28 md:mt-28 md:flex-row lg:mt-28">
 				<figure className="mx-auto text-center">
 					<svg
