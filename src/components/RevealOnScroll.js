@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-export default function RevealOnScroll(ref) {
-	const [isIntersecting, setIntersecting] = useState(false);
+export default function useRevealOnScroll(ref) {
+	const [isIntersecting, setIsIntersecting] = useState(false);
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(
 			([entry]) => {
-				setIntersecting(entry.isIntersecting);
+				setIsIntersecting(entry.isIntersecting);
 			},
 			{ rootMargin: '-200px' }
 		);
