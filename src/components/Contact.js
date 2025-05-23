@@ -42,7 +42,7 @@ export default function Contact() {
 	}
 
 	return (
-		<section id="contact" className="flex flex-col justify-center">
+		<section id="contact" className="animate-fadeIn flex flex-col justify-center">
 			{sent === true ? (
 				<Alert color="success" onDismiss={() => setSent(false)}>
 					<p className="font-medium">Message Sent!</p>
