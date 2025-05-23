@@ -9,11 +9,25 @@
 }
 
 :root {
-	--scrollbar-bg: rgb(150, 156, 158);
+	--scrollbar-bg: rgb(173, 178, 179);
 	--scrollbar-thumb: rgb(79, 79, 79);
 	--scrollbar-thumb-hover: rgb(60, 60, 60);
 	--scrollbar-thumb-hold: rgb(50, 50, 50);
 	--scrollbar-btn-bg: rgb(68, 68, 68);
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 87%;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.animate-fadeIn {
+	animation: fadeIn 0.4s ease-in-out;
 }
 
 .prism {
