@@ -4,22 +4,22 @@ import { languages, frameworks, database, tools } from '../data';
 
 import { ChevronDoubleDownIcon, CommandLineIcon } from '@heroicons/react/24/outline';
 
-import RevealOnScroll from './RevealOnScroll';
+import useRevealOnScroll from './RevealOnScroll';
 export default function Skills() {
 	const refLanguage = useRef();
-	const isVisibleLanguage = RevealOnScroll(refLanguage);
+	const isVisibleLanguage = useRevealOnScroll(refLanguage);
 
 	const refFrameworks = useRef();
-	const isVisibleFramework = RevealOnScroll(refFrameworks);
+	const isVisibleFramework = useRevealOnScroll(refFrameworks);
 
 	const refDatabase = useRef(1);
-	const isVisibleDatabase = RevealOnScroll(refDatabase);
+	const isVisibleDatabase = useRevealOnScroll(refDatabase);
 
 	const refTools = useRef();
-	const isVisibleTools = RevealOnScroll(refTools);
+	const isVisibleTools = useRevealOnScroll(refTools);
 
 	return (
-		<section id="skills" className="min-h-screen">
+		<section id="skills" className="animate-fadeIn min-h-screen">
 			<div className="mx-auto flex min-w-full flex-wrap items-center justify-center scroll-smooth">
 				<div className="mt-10 flex w-1/2 flex-col pb-10 pt-16">
 					<div className="flex flex-row items-center justify-center">
