@@ -5,7 +5,7 @@ import { customTheme } from '../themes/CarouselCustomTheme';
 
 export default function Projects() {
 	return (
-		<section id="projects" className="text-gray-400">
+		<section id="projects" className="animate-fadeIn text-gray-400">
 			<div className="mx-auto my-10 flex min-w-full flex-col items-center scroll-smooth pt-5 sm:pt-20 md:pt-20 lg:pt-20">
 				<div className="flex w-3/4 flex-col pb-10 sm:w-1/2 md:w-1/2 lg:w-1/2">
 					<div className="mb-4 flex flex-row items-center justify-center">
