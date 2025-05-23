@@ -4,7 +4,7 @@ export default function About() {
 	const btnCustomStyle = 'bg-gray-800 hover:border-slate-400 hover:text-white text-gray-400';
 	const contactCustomStyle = 'bg-green-600 hover:border-slate-300 text-white';
 	return (
-		<section id="about" className="flex justify-center">
+		<section id="about" className="animate-fadeIn flex justify-center">
 			<article className="container mx-auto mb-12 mt-12 flex min-h-[65vh] w-11/12 flex-col items-center rounded-xl border-4 bg-black bg-opacity-50 px-10 py-10 sm:mt-28 md:mt-28 md:flex-row lg:mt-28">
 				<header className="mb-10 flex flex-1 flex-col items-center p-3 text-center md:mb-0 md:w-full md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24">
 					<h1 className="title-font mb-2 text-3xl font-medium text-white">
