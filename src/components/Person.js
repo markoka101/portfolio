@@ -1,4 +1,7 @@
+import React, { useState } from 'react';
 export default function Person() {
+	//state to track whether image is fully loaded
+	const [imageLoaded, setImageLoaded] = useState(false);
 	return (
 		<section id="person" className="animate-fadeIn flex justify-center">
 			<article className="container mx-auto mb-12 mt-12 flex min-h-[65vh] w-11/12 flex-col items-center rounded-xl border-4 bg-black bg-opacity-50 px-10 py-10 sm:mt-28 md:mt-28 md:flex-row lg:mt-28">
@@ -23,16 +26,20 @@ export default function Person() {
 						-I am passionate about aviation and as a kid, I wanted to be a pilot
 					</p>
 				</div>
-				<aside className="w-5/6 bg-transparent sm:max-w-sm md:w-1/2 lg:w-full">
+				<aside
+					className={`w-5/6 bg-transparent transition duration-200 ease-in-out sm:max-w-sm md:w-1/2 lg:w-full ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+				>
 					<h4 className="mb-1 leading-relaxed text-gray-200">
 						Top Left: Hades <br />
 						Bottom Left: Salem <br />
 						Right: Throatcuttah
 					</h4>
+
 					<img
-						className="rounded-md border-4 border-gray-400 object-cover object-center"
+						className={`rounded-md border-4 border-gray-400 object-cover object-center`}
 						alt="gremlins"
 						src="./gremlins.JPG"
+						onLoad={() => setImageLoaded(true)}
 					/>
 				</aside>
 			</article>
