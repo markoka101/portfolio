@@ -1,13 +1,12 @@
 import React from 'react';
-import { Alert } from 'flowbite-react';
+import FormStatusModal from './modals/FormStatusModal';
+import axios from 'axios';
 
 export default function Contact() {
 	const [name, setName] = React.useState('');
 	const [email, setEmail] = React.useState('');
 	const [message, setMessage] = React.useState('');
-	const [allFields, setAllFields] = React.useState(false);
-	const [sent, setSent] = React.useState(false);
-	const [errBanner, setErrBanner] = React.useState(false);
+	const [modal, setModal] = React.useState({ open: false, title: '', message: '', type: '' });
 
 	function encode(data) {
 		return Object.keys(data)
@@ -15,51 +14,52 @@ export default function Contact() {
 			.join('&');
 	}
 
-	function handleSubmit(e) {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 
 		if (name.trim().length === 0 || email.trim().length === 0 || message.trim().length === 0) {
 			setAllFields(true);
+			setModal({
+				open: true,
+				title: 'Incomplete Form',
+				message: 'Please fill out all fields before submitting.',
+				type: 'warning'
+			});
 			return;
 		}
 
-		fetch('/', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: encode({ 'form-name': 'contact', name, email, message })
-		})
+		await axios
+			.post('/', encode({ 'form-name': 'contact', name, email, message }), {
+				headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+			})
 			.then(() => {
-				setErrBanner(false);
-				setAllFields(false);
-				setSent(true);
+				setModal({
+					open: true,
+					title: 'Message Sent!',
+					message: "Thank you for booking! I'll be in touch soon.",
+					type: 'success'
+				});
 			})
 			.catch((err) => {
-				setSent(false);
-				setAllFields(false);
-				setErrBanner(true);
-				console.log(err);
+				setModal({
+					open: true,
+					title: 'Something Went Wrong',
+					message: 'There was an error sending your message. Please try again later.',
+					type: 'error'
+				});
+				console.error(err);
 			});
-	}
+	};
 
 	return (
 		<section id="contact" className="animate-fadeIn flex flex-col justify-center">
-			{sent === true ? (
-				<Alert color="success" onDismiss={() => setSent(false)}>
-					<p className="font-medium">Message Sent!</p>
-				</Alert>
-			) : null}
-
-			{errBanner === true ? (
-				<Alert color="failure" onDismiss={() => setErrBanner(false)}>
-					<p className="font-medium">Something Went Wrong!</p>
-				</Alert>
-			) : null}
-
-			{allFields === true ? (
-				<Alert color="failure" onDismiss={() => setAllFields(false)}>
-					<p className="font-medium">Please fill in all fields!</p>
-				</Alert>
-			) : null}
+			<FormStatusModal
+				open={modal.open}
+				onClose={() => setModal({ ...modal, open: false })}
+				title={modal.title}
+				message={modal.message}
+				type={modal.type}
+			/>
 
 			<div className="container mx-auto my-5 flex flex-wrap px-5 py-5 sm:my-16 sm:flex-nowrap sm:py-10 md:my-16 md:py-10 lg:my-16 lg:py-10">
 				<form
@@ -75,6 +75,7 @@ export default function Contact() {
 						Please leave your name, email, and a short message
 					</p>
 					<div className="relative mb-4">
+						<input type="hidden" name="bot-field" />
 						<label htmlFor="name" className="text-sm leading-7 text-white">
 							Name
 						</label>
