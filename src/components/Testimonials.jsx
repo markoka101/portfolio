@@ -1,4 +1,5 @@
 import { Blockquote, Avatar } from 'flowbite-react';
+import taylorAvatar from '../assets/taylor-avatar.jpg';
 
 export default function Testimonials() {
 	return (
@@ -30,12 +31,7 @@ export default function Testimonials() {
 					</Blockquote>
 					<figcaption className="mt-6 flex items-center justify-center space-x-3">
 						<div>
-							<Avatar
-								rounded
-								className="h-10 w-10"
-								img="./taylor-avatar.jpg"
-								alt="Taylor Morales"
-							/>
+							<Avatar rounded className="h-10 w-10" img={taylorAvatar} alt="Taylor Morales" />
 						</div>
 
 						<div className="flex items-center divide-x-2 divide-gray-300">

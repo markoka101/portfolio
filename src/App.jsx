@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Flowbite } from 'flowbite-react';
 
-import About from './components/About';
-import NavbarComponent from './components/Navbar';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
-import Person from './components/Person';
-import Testimonials from './components/Testimonials';
+import About from './components/About.jsx';
+import NavbarComponent from './components/Navbar.jsx';
+import Projects from './components/Projects.jsx';
+import Skills from './components/Skills.jsx';
+import Contact from './components/Contact.jsx';
+import Person from './components/Person.jsx';
+import Testimonials from './components/Testimonials.jsx';
 
 export default function App() {
 	return (
@@ -16,12 +16,12 @@ export default function App() {
 				<Flowbite>
 					<NavbarComponent />
 					<Routes>
-						<Route path="*" element={<About />} />
-						<Route path="testimonials" element={<Testimonials />} />
-						<Route path="projects" element={<Projects />} />
-						<Route path="skills" element={<Skills />} />
-						<Route path="about-me" element={<Person />} />
-						<Route path="contact" element={<Contact />} />
+						<Route path="/*" element={<About />} />
+						<Route path="/testimonials" element={<Testimonials />} />
+						<Route path="/projects" element={<Projects />} />
+						<Route path="/skills" element={<Skills />} />
+						<Route path="/about-me" element={<Person />} />
+						<Route path="/contact" element={<Contact />} />
 					</Routes>
 				</Flowbite>
 			</BrowserRouter>

@@ -1,4 +1,5 @@
-import HomeButton from './HomeButton';
+import HomeButton from './HomeButton.jsx';
+import portrait from '../assets/portrait.jpeg';
 
 export default function About() {
 	const btnCustomStyle = 'bg-gray-800 hover:border-slate-400 hover:text-white text-gray-400';
@@ -9,7 +10,7 @@ export default function About() {
 				<header className="mb-10 flex flex-1 flex-col items-center p-3 text-center md:mb-0 md:w-full md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24">
 					<h1 className="title-font mb-2 text-3xl font-medium text-white">
 						Mark Oka
-						<p className="mt-1 text-lg font-medium text-white">Software Engineer</p>
+						<p className="mt-1 text-lg font-medium text-white">Software Engineer / Developer </p>
 					</h1>
 					<p className="mb-6 text-left leading-relaxed text-gray-200">
 						I am a software engineer living in Brooklyn, NY. I am a lifelong learner that always
@@ -31,11 +32,11 @@ export default function About() {
 						</a>
 					</nav>
 				</header>
-				<aside className="my-1 hidden p-5 lg:block lg:max-w-sm">
+				<aside className="my-1 hidden p-5 2xl:lg:max-w-sm 2xl:flex">
 					<img
 						className="float-right rounded-md border-2 border-gray-900"
 						alt="me"
-						src="./portrait.jpeg"
+						src={portrait}
 					/>
 				</aside>
 			</article>

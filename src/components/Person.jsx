@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import gremlins from '../assets/gremlins.JPG';
 export default function Person() {
 	//state to track whether image is fully loaded
 	const [imageLoaded, setImageLoaded] = useState(false);
@@ -38,7 +39,7 @@ export default function Person() {
 					<img
 						className={`rounded-md border-4 border-gray-400 object-cover object-center`}
 						alt="gremlins"
-						src="./gremlins.JPG"
+						src={gremlins}
 						onLoad={() => setImageLoaded(true)}
 					/>
 				</aside>
