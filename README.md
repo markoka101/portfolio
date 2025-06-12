@@ -5,6 +5,7 @@ This is my portfolio, it showcases my skills, experience, and background. Feel f
 ### Built With
 -   Javascript
 -   React
+-   Vite
 -   Tailwind
 -   Flowbite
 
