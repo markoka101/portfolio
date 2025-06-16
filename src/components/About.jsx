@@ -38,7 +38,7 @@ export default function About() {
 							<HomeButton text="Work and Projects" route="/projects" customStyle={btnCustomStyle} />
 							<HomeButton text="About Me" route="/about-me" customStyle={btnCustomStyle} />
 							<a
-								href="./mark-oka-resume.pdf"
+								href="./mark-oka-resume-2025.pdf"
 								target="_blank"
 								rel="noreferrer"
 								className="my-1 inline-flex justify-center rounded-xl border-2 border-transparent bg-gray-800 px-6 py-2 text-lg text-gray-400 transition-all duration-200 ease-in hover:border-slate-400 hover:text-white focus:outline-none md:my-0.5 md:mr-2 lg:my-0.5 lg:mr-2"
