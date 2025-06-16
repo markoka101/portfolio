@@ -1,7 +1,6 @@
 import {
 	JavaOriginal,
 	JavascriptOriginal,
-	CplusplusOriginal,
 	SqldeveloperOriginal,
 	Html5Original,
 	Css3Original,
@@ -18,7 +17,9 @@ import {
 	PostmanOriginal,
 	EclipseOriginal,
 	VscodeOriginal,
-	DockerPlain
+	DockerPlain,
+	ViteOriginal,
+	TypescriptOriginal
 } from 'devicons-react';
 /*
 projects
@@ -69,8 +70,8 @@ export const languages = [
 		icon: JavascriptOriginal
 	},
 	{
-		title: 'C++',
-		icon: CplusplusOriginal
+		title: 'TypeScript',
+		icon: TypescriptOriginal
 	},
 	{
 		title: 'SQL',
@@ -106,6 +107,10 @@ export const frameworks = [
 	{
 		title: 'Tailwind',
 		icon: TailwindcssOriginal
+	},
+	{
+		title: 'Vite',
+		icon: ViteOriginal
 	}
 ];
 
