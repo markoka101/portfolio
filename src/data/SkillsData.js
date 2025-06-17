@@ -21,41 +21,6 @@ import {
 	ViteOriginal,
 	TypescriptOriginal
 } from 'devicons-react';
-/*
-projects
-*/
-export const projects = [
-	{
-		title: 'Taylor M Portfolio',
-		subtitle: 'Javascript | JSX | React | CSS | Tailwind',
-		description: 'Portfolio developed for client',
-		link: 'https://www.taylor-m.com/'
-	},
-	{
-		title: 'Event Tracker',
-		subtitle: 'Java | Javascript | Spring Boot | JPA | React | Mapbox',
-		description: 'Event Tracking application',
-		link: 'https://github.com/markoka101/event-tracker'
-	},
-	{
-		title: 'TODO Application',
-		subtitle: 'Java | Javascript | Spring Boot | JPA | React',
-		description: 'Application to keep track of tasks',
-		link: 'https://github.com/markoka101/todo'
-	},
-	{
-		title: 'Lesson Plan',
-		subtitle: 'Javascript | Node.js',
-		description: 'Lesson plan I developed for my students',
-		link: 'https://github.com/markoka101/lessons'
-	},
-	{
-		title: 'See More',
-		subtitle: '',
-		description: 'See all of my projects on GitHub',
-		link: 'https://github.com/markoka101'
-	}
-];
 
 /*
 Skills and tools
