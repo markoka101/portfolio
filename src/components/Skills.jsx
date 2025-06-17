@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 
-import { languages, frameworks, database, tools } from '../data';
+import { languages, frameworks, database, tools } from '../data/SkillsData';
 
 import { ChevronDoubleDownIcon, CommandLineIcon } from '@heroicons/react/24/outline';
 import { Helmet } from 'react-helmet-async';
