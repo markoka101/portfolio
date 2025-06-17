@@ -1,6 +1,6 @@
 import { CodeBracketIcon } from '@heroicons/react/24/outline';
 import { Carousel } from 'flowbite-react';
-import { projects } from '../data';
+import { projects } from '../data/ProjectData';
 import { customTheme } from '../themes/CarouselCustomTheme';
 import { Helmet } from 'react-helmet-async';
 
@@ -52,8 +52,10 @@ export default function Projects() {
 											<h2 className="mb-1 text-center text-sm font-medium tracking-widest text-green-400">
 												{project.subtitle}
 											</h2>
-											<h1 className="mb-3 text-lg font-medium text-white">{project.title}</h1>
-											<p className="leading-relaxed">{project.description}</p>
+											<h1 className="mb-3 text-center text-lg font-medium text-white">
+												{project.title}
+											</h1>
+											<p className="text-center leading-relaxed">{project.description}</p>
 										</div>
 									</div>
 								</a>
