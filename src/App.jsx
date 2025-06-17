@@ -11,7 +11,7 @@ import Testimonials from './components/Testimonials.jsx';
 
 export default function App() {
 	return (
-		<main className="flex min-h-[100vh] flex-col bg-[url('../public/subtle-prism.svg')] text-gray-300">
+		<main className="flex min-h-[100vh] flex-col bg-[url('./assets/subtle-prism.svg')] text-gray-300">
 			<BrowserRouter>
 				<Flowbite>
 					<NavbarComponent />
