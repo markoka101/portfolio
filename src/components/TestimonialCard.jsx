@@ -13,8 +13,8 @@ export default function TestimonialCard({
 		<figure
 			id="testimonial-card"
 			className={twMerge(
-				`${customStyles}`,
-				'contianer bg-opacity flex h-full w-full flex-col items-center justify-center rounded-xl bg-black/70 px-4 py-10 text-white ring-4 ring-slate-100/75 md:py-20'
+				'contianer bg-opacity flex h-full w-full flex-col items-center justify-center rounded-xl bg-black/70 px-4 py-10 text-white ring-4 ring-slate-100/75 md:py-20',
+				`${customStyles}`
 			)}
 		>
 			<svg
