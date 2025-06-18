@@ -38,14 +38,14 @@ export default function Contact() {
 				setModal({
 					open: true,
 					title: 'Message Sent!',
-					message: "Thank you for booking! I'll be in touch soon.",
+					message: "Thank you for contacting me! I'll be in touch soon.",
 					type: 'success'
 				});
 			})
 			.catch((err) => {
 				setModal({
 					open: true,
-					title: 'Something Went Wrong',
+					title: 'Something Went Wrong :(',
 					message: 'There was an error sending your message. Please try again later.',
 					type: 'error'
 				});
@@ -76,12 +76,12 @@ export default function Contact() {
 					type={modal.type}
 				/>
 
-				<div className="container mx-auto my-5 flex flex-wrap px-5 py-5 sm:my-16 sm:flex-nowrap sm:py-10 md:my-16 md:py-10 lg:my-16 lg:py-10">
+				<div className="container mx-auto my-5 flex flex-wrap px-5 py-5 sm:my-16 sm:flex-nowrap sm:py-10 md:my-16 md:py-10 lg:py-10">
 					<form
 						netlify
 						name="contact"
 						onSubmit={handleSubmit}
-						className="mt-8 flex w-full flex-col rounded-xl border-4 border-slate-500 bg-black bg-opacity-85 p-5 md:mx-auto md:mt-0 md:py-8 lg:w-1/2"
+						className="mt-8 flex w-full flex-col rounded-xl border-4 border-slate-500 bg-black bg-opacity-85 p-5 sm:mx-auto sm:mt-0 sm:w-[500px] sm:py-8 lg:w-[650px]"
 					>
 						<h2 className="title-font mb-1 text-3xl font-medium text-white sm:text-4xl">
 							Contact Me
@@ -125,7 +125,7 @@ export default function Contact() {
 							<textarea
 								id="message"
 								name="message"
-								className="h-32 w-full resize-none rounded border border-gray-700 bg-gray-800 px-3 py-1 text-base leading-6 text-gray-100 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900"
+								className="h-32 w-full rounded border border-gray-700 bg-gray-800 px-3 py-1 text-base leading-6 text-gray-100 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900"
 								onChange={(e) => {
 									setMessage(e.target.value);
 								}}
