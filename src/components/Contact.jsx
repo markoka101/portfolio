@@ -78,7 +78,7 @@ export default function Contact() {
 
 				<div className="container mx-auto my-5 flex flex-wrap px-5 py-5 sm:my-16 sm:flex-nowrap sm:py-10 md:my-16 md:py-10 lg:py-10">
 					<form
-						netlify
+						data-netlify="true"
 						name="contact"
 						onSubmit={handleSubmit}
 						className="mt-8 flex w-full flex-col rounded-xl border-4 border-slate-500 bg-black bg-opacity-85 p-5 sm:mx-auto sm:mt-0 sm:w-[500px] sm:py-8 lg:w-[650px]"
