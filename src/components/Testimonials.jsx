@@ -27,7 +27,7 @@ export default function Testimonials() {
 								avatar={test.icon}
 								profession={test.profession}
 								review={test.review}
-								customStyles="w-11/12"
+								customStyles="w-11/12 my-10"
 								avatarAlt={test.alt}
 							/>
 						);

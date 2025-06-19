@@ -1,4 +1,5 @@
 import taylorAvatar from '../assets/taylor-avatar.jpg';
+import jeremyAvatar from '../assets/jeremy-pic-avatar.jpg';
 
 export const testimonials = [
 	{
@@ -17,5 +18,13 @@ export const testimonials = [
                                 mobile-friendly, was first rate. He ensured that the overall design and loading
                                 times were responsive and made the website not only attractive but also highly
                                 functional across various devices.`
+	},
+	{
+		name: 'Jeremy Messina',
+		profession: 'Freelance Photographer',
+		icon: jeremyAvatar,
+		alt: 'Picture of Jeremy Messina',
+		review: `Mark was a pleasure to work with. Has fast turnover and was very efficient. 
+                Quickly launched a great looking website for both mobile and web. Thank You!`
 	}
 ];
