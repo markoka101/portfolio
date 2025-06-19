@@ -4,7 +4,7 @@ projects
 export const projects = [
 	{
 		title: 'Jeremy Messina Photographer Portfolio',
-		subtitle: 'Javascript | JSX | React | Vite | Tailwind',
+		subtitle: 'TypeScript | TSX | React | Vite | Tailwind',
 		description: 'Portfolio developed for a freelance photographer',
 		link: 'https://jeremy-photography-portfolio.netlify.app/'
 	},
