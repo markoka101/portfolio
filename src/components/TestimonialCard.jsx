@@ -13,7 +13,7 @@ export default function TestimonialCard({
 		<figure
 			id="testimonial-card"
 			className={twMerge(
-				'contianer bg-opacity flex h-full w-full flex-col items-center justify-center rounded-xl bg-black/70 px-4 py-10 text-white ring-4 ring-slate-100/75 md:py-20',
+				'contianer bg-opacity flex h-full w-full flex-col items-center justify-center rounded-xl bg-black/70 px-4 py-10 text-white ring-4 ring-slate-100/75 md:py-16',
 				`${customStyles}`
 			)}
 		>
@@ -29,7 +29,7 @@ export default function TestimonialCard({
 			<p className="my-2 px-2 text-center font-semibold italic sm:text-xl md:px-10 md:text-2xl">
 				{review}
 			</p>
-			<figcaption className="mx-auto mt-2 flex w-full flex-row items-center justify-center">
+			<figcaption className="mx-auto mt-4 flex w-full flex-row items-center justify-center">
 				<img src={avatar} alt={avatarAlt} className="mr-3 w-10 rounded-full" />
 				<div className="flex items-center divide-x-2 divide-gray-300">
 					<cite className="pr-3 font-medium text-white">{name}</cite>
