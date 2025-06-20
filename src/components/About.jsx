@@ -1,5 +1,6 @@
 import HomeButton from './HomeButton.jsx';
 import portrait from '../assets/portrait.jpeg';
+import FadeInImage from './FadeInImage.jsx';
 import { Helmet } from 'react-helmet-async';
 
 export default function About() {
@@ -48,9 +49,9 @@ export default function About() {
 						</nav>
 					</header>
 					<aside className="my-1 hidden p-5 2xl:lg:max-w-sm 2xl:flex">
-						<img
-							className="float-right rounded-md border-2 border-gray-900"
-							alt="me"
+						<FadeInImage
+							className="float-right rounded-md border-2 border-gray-900 duration-200"
+							alt="Picture of Mark Oka (Me!)"
 							src={portrait}
 						/>
 					</aside>

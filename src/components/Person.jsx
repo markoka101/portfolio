@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import gremlins from '../assets/gremlins.JPG';
 import { Helmet } from 'react-helmet-async';
+import FadeInImage from './FadeInImage'; // Adjust path as needed
+
 export default function Person() {
-	//state to track whether image is fully loaded
-	const [imageLoaded, setImageLoaded] = useState(false);
 	return (
 		<>
 			<Helmet>
@@ -41,20 +41,17 @@ export default function Person() {
 							-I am passionate about aviation and as a kid, I wanted to be a pilot
 						</p>
 					</div>
-					<aside
-						className={`w-5/6 bg-transparent transition duration-200 ease-in-out sm:max-w-sm md:w-1/2 lg:w-full ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
-					>
+					<aside className="w-5/6 bg-transparent transition duration-200 ease-in-out sm:max-w-sm md:w-1/2 lg:w-full">
 						<h4 className="mb-1 leading-relaxed text-gray-200">
 							Top Left: Hades <br />
 							Bottom Left: Salem <br />
 							Right: Throatcuttah
 						</h4>
 
-						<img
-							className={`rounded-md border-4 border-gray-400 object-cover object-center`}
+						<FadeInImage
+							className="rounded-md border-4 border-gray-400 object-cover object-center duration-200"
 							alt="gremlins"
 							src={gremlins}
-							onLoad={() => setImageLoaded(true)}
 						/>
 					</aside>
 				</article>
