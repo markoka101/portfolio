@@ -8,17 +8,18 @@ export const projects = [
 		description: 'Portfolio developed for a freelance photographer',
 		link: 'https://jeremy-photography-portfolio.netlify.app/'
 	},
-	{
-		title: 'Taylor M Portfolio',
-		subtitle: 'Javascript | JSX | React | CSS | Tailwind',
-		description: 'Portfolio developed for client',
-		link: 'https://www.taylor-m.com/'
-	},
+
 	{
 		title: 'Event Tracker',
 		subtitle: 'Java | Javascript | Spring Boot | JPA | React | Mapbox',
 		description: 'Event Tracking application',
 		link: 'https://github.com/markoka101/event-tracker'
+	},
+	{
+		title: 'Inventory Checker',
+		subtitle: 'Javascript | NodeJS | Puppeteer',
+		description: 'Program which checks if item is in stock on website',
+		link: 'https://github.com/markoka101/inventory-checker/'
 	},
 	{
 		title: 'See More',
