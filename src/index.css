@@ -16,6 +16,14 @@
 	--scrollbar-btn-bg: rgb(68, 68, 68);
 }
 
+body {
+  background-image: url('data:image/svg+xml;utf8,<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="100,0 200,200 0,200" fill="%2300c6fb"/><polygon points="0,0 100,0 0,200" fill="%23f5f7fa" fill-opacity="0.5"/><polygon points="100,0 200,0 200,200" fill="%2345c3e6" fill-opacity="0.7"/><polygon points="0,0 200,0 100,100" fill="%23a8edea" fill-opacity="0.4"/></svg>');
+  background-size: 150%;
+  background-color: rgb(121, 149, 158);
+  background-repeat: repeat;
+  background-position: right;
+}
+
 @keyframes fadeIn {
 	0% {
 		opacity: 87%;
@@ -28,14 +36,6 @@
 
 .animate-fadeIn {
 	animation: fadeIn 0.4s ease-in-out;
-}
-
-.prism {
-	background-color: #bababa;
-	background-image: url('./assets/subtle-prism.svg');
-	background-size: cover;
-	transform: translateZ(0);
-	will-change: background;
 }
 
 html {

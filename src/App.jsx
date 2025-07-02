@@ -1,17 +1,18 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Flowbite } from 'flowbite-react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import About from './components/About.jsx';
 import NavbarComponent from './components/Navbar.jsx';
-import Projects from './components/Projects.jsx';
-import Skills from './components/Skills.jsx';
-import Contact from './components/Contact.jsx';
-import Person from './components/Person.jsx';
-import Testimonials from './components/Testimonials.jsx';
+import About from './pages/About.jsx';
+import Contact from './pages/Contact.jsx';
+import Person from './pages/Person.jsx';
+import Projects from './pages/Projects.jsx';
+import Skills from './pages/Skills.jsx';
+import Testimonials from './pages/Testimonials.jsx';
 
 export default function App() {
+	//bg-[url('./assets/subtle-prism.svg')]
 	return (
-		<main className="flex min-h-[100vh] flex-col bg-[url('./assets/subtle-prism.svg')] text-gray-300">
+		<main className="flex min-h-[100vh] flex-col  text-gray-300 overflow-auto">
 			<BrowserRouter>
 				<Flowbite>
 					<NavbarComponent />
@@ -25,14 +26,6 @@ export default function App() {
 					</Routes>
 				</Flowbite>
 			</BrowserRouter>
-			<footer className="bottom-0 mt-auto w-[14rem] self-end bg-black bg-opacity-25 text-white">
-				<a
-					href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/ "
-					className="float-right pr-2 text-xs"
-				>
-					Background by SVGBackgrounds.com
-				</a>
-			</footer>
 		</main>
 	);
 }
