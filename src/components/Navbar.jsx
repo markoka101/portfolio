@@ -1,8 +1,7 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Navbar } from 'flowbite-react';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 export default function NavbarComponent() {
 	const navigate = useNavigate();
@@ -57,7 +56,7 @@ export default function NavbarComponent() {
 		<Navbar theme={customTheme}>
 			<Navbar.Brand>
 				<button
-					className="mb-1 text-2xl font-medium text-slate-300 transition-colors duration-300 ease-in-out hover:text-white"
+					className="mb-1 text-2xl font-medium text-slate-200 transition-colors duration-300 ease-in-out hover:text-white"
 					onClick={() => navigate('/')}
 				>
 					Mark Oka
