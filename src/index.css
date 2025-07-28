@@ -1,15 +1,134 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import 'tailwindcss';
 
-@layer components {
-	.btn-nav {
-		@apply text-end text-2xl transition-colors duration-200 ease-in-out hover:text-white md:text-lg lg:text-lg;
+@theme {
+	--font-inter: 'Inter Variable', 'Inter', sans-serif;
+	--font-sans: var(--font-inter);
+	/*--animate-hue-cycle-delayed: hue-circle 6s linear infinite 0.5s;*/
+	/* --animate-hue-cycle-delayed: hue-pulse 4s ease-in-out infinite 0.5s; */
+	--animate-hue-cycle-delayed: hue-shift 3s linear infinite 2s;
+	--animate-hue-cycle: hue-shift 3s linear infinite;
+
+	@keyframes hue-cycle {
+		0% {
+			background-position: 0% 50%;
+		}
+		100% {
+			background-position: 200% 50%;
+		}
+	}
+
+	@keyframes hue-circle {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes hue-pulse {
+		0%,
+		100% {
+			background-size: 100% 100%;
+			opacity: 1;
+		}
+		50% {
+			background-size: 150% 150%;
+			opacity: 0.8;
+		}
+	}
+
+	@keyframes hue-shift {
+		0% {
+			filter: hue-rotate(0deg);
+		}
+		100% {
+			filter: hue-rotate(360deg);
+		}
 	}
 }
 
+@layer utilities {
+	.animate-fadeIn {
+		animation: fadeIn 0.6s ease-in-out;
+	}
+	.scrollbar-hide {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+	.animate-menu-icon-fadeIn {
+		animation: menuIconFadeIn 0.7s ease-in-out;
+	}
+	.scrollbar-hide::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+@layer components {
+	/* Carousel container */
+	.carousel {
+		@apply relative w-full overflow-hidden rounded-lg;
+
+		height: auto;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	/* Track wrapper: no scrollbars (we’re transforming it), just preserve GPU compositing */
+	.carousel-track {
+		@apply flex w-full will-change-transform;
+		transform: translateZ(0);
+		backface-visibility: hidden;
+	}
+
+	/* Slides: snap to center of container */
+	.carousel-item {
+		@apply w-full flex-shrink-0;
+		backface-visibility: hidden;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	.carousel-item--active {
+		@apply opacity-100 filter-none;
+	}
+
+	/* Controls */
+	.carousel-control {
+		@apply absolute top-1/2 z-10 -translate-y-1/2 rounded-full bg-white/90 p-2 shadow-lg;
+		width: 2.75rem; /* 44px */
+		height: 2.75rem; /* 44px */
+	}
+	.carousel-control--prev {
+		@apply left-4;
+	}
+	.carousel-control--next {
+		@apply right-4;
+	}
+	.carousel-control:disabled {
+		@apply cursor-not-allowed opacity-50;
+	}
+
+	/* Indicators */
+	.carousel-indicators {
+		@apply absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 space-x-2;
+	}
+	.carousel-indicator {
+		@apply h-3 w-3 rounded-full bg-gray-400/60 transition-colors hover:bg-gray-800/80;
+	}
+	.carousel-indicator--active {
+		@apply bg-blue-600 shadow-md;
+	}
+
+	/* Empty state */
+	.carousel-empty {
+		@apply flex h-80 items-center justify-center rounded-lg border-2 border-dashed border-gray-200 bg-gray-50 text-gray-500;
+	}
+}
+
+/* Global styles */
 :root {
-	--scrollbar-bg: rgb(173, 178, 179);
+	--scrollbar-bg: rgb(177, 173, 179);
 	--scrollbar-thumb: rgb(79, 79, 79);
 	--scrollbar-thumb-hover: rgb(60, 60, 60);
 	--scrollbar-thumb-hold: rgb(50, 50, 50);
@@ -17,25 +136,11 @@
 }
 
 body {
-  background-image: url('data:image/svg+xml;utf8,<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="100,0 200,200 0,200" fill="%2300c6fb"/><polygon points="0,0 100,0 0,200" fill="%23f5f7fa" fill-opacity="0.5"/><polygon points="100,0 200,0 200,200" fill="%2345c3e6" fill-opacity="0.7"/><polygon points="0,0 200,0 100,100" fill="%23a8edea" fill-opacity="0.4"/></svg>');
-  background-size: 150%;
-  background-color: rgb(121, 149, 158);
-  background-repeat: repeat;
-  background-position: right;
-}
-
-@keyframes fadeIn {
-	0% {
-		opacity: 87%;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
-.animate-fadeIn {
-	animation: fadeIn 0.4s ease-in-out;
+	background-image: url('data:image/svg+xml;utf8,<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="100,0 200,200 0,200" fill="%2300c6fb"/><polygon points="0,0 100,0 0,200" fill="%23f5f7fa" fill-opacity="0.5"/><polygon points="100,0 200,0 200,200" fill="%2345c3e6" fill-opacity="0.7"/><polygon points="0,0 200,0 100,100" fill="%23a8edea" fill-opacity="0.4"/></svg>');
+	background-size: 150%;
+	background-color: rgb(74, 154, 181);
+	background-repeat: repeat;
+	background-position: right;
 }
 
 html {
@@ -44,11 +149,57 @@ html {
 	height: 100%;
 }
 
+@keyframes fadeIn {
+	0% {
+		opacity: 0%;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes menuIconFadeIn {
+	0%,
+	75% {
+		opacity: 0%;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
+
+/* Underline animate from center on hover */
+.nav-underline {
+	position: relative;
+	display: inline-block;
+}
+
+.nav-underline::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: currentColor;
+
+	transform-origin: center;
+	transform: scaleX(0);
+	transition: transform 0.2s ease-in-out;
+}
+
+.nav-underline:hover::after,
+.nav-underline:focus::after,
+.nav-underline[aria-current='page']::after {
+	transform: scaleX(0.8);
+}
+
+/* Scrollbar appearence */
 ::-webkit-scrollbar {
-	width: 16px;
-	height: 16px;
-	background-color: var(--scrollbar-bg);
-	border-inline: 2px solid rgb(98, 101, 102);
+	width: 13px;
+
+	border-inline: 0.5px solid rgb(98, 101, 102);
 }
 
 ::-webkit-scrollbar-thumb {
