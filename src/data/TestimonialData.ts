@@ -1,7 +1,16 @@
-import taylorAvatar from '../assets/taylor-avatar.jpg';
 import jeremyAvatar from '../assets/jeremy-pic-avatar.jpg';
+import taylorAvatar from '../assets/taylor-avatar.jpg';
 
-export const testimonials = [
+export interface TestimonialProp {
+	key?: string;
+	name: string;
+	profession: string;
+	icon: string;
+	alt: string;
+	review: string;
+	customStyles?: string;
+}
+export const testimonials: TestimonialProp[] = [
 	{
 		name: 'Taylor Morales',
 		profession: 'Learning Design Specialist at TheRealReal',
