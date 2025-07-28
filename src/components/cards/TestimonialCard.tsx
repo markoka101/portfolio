@@ -1,14 +1,14 @@
-import PropTypes from 'prop-types';
 import { twMerge } from 'tailwind-merge';
+import { type TestimonialProp } from '../../data/TestimonialData';
 
 export default function TestimonialCard({
 	name = '',
 	profession = '',
-	avatar = '',
-	avatarAlt = '',
+	icon = '',
+	alt = '',
 	review = '',
 	customStyles = ''
-}) {
+}: Readonly<TestimonialProp>) {
 	return (
 		<figure
 			id="testimonial-card"
@@ -30,7 +30,7 @@ export default function TestimonialCard({
 				{review}
 			</p>
 			<figcaption className="mx-auto mt-4 flex w-full flex-row items-center justify-center">
-				<img src={avatar} alt={avatarAlt} className="mr-3 w-10 rounded-full" />
+				<img src={icon} alt={alt} className="mr-3 w-10 rounded-full" />
 				<div className="flex items-center divide-x-2 divide-gray-300">
 					<cite className="pr-3 font-medium text-white">{name}</cite>
 					<cite className="pl-3 text-sm text-gray-100">{profession}</cite>
@@ -39,13 +39,3 @@ export default function TestimonialCard({
 		</figure>
 	);
 }
-
-//validation
-TestimonialCard.propTypes = {
-	name: PropTypes.string.isRequired,
-	profession: PropTypes.string.isRequired,
-	avatar: PropTypes.string.isRequired,
-	avatarAlt: PropTypes.string.isRequired,
-	review: PropTypes.string.isRequired,
-	customStyles: PropTypes.string.isRequired
-};
