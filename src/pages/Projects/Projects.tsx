@@ -59,7 +59,7 @@ function Projects() {
 							indicatorActiveClassName={clsx(
 								'bg-black transition-colors duration-[1s] ease-out'
 							)}
-							autoPlay={false}
+							autoPlay
 							dragResistance={1.5}
 							autoPlayInterval={4000}
 							NextIcon={<NextArrowIcon className={iconClassName} />}
