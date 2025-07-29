@@ -11,7 +11,7 @@ export default function HomeButton({ text = ' ', route = ' ', customStyle = ' ' 
 		<NavLink
 			to={route}
 			className={twMerge(
-				`my-1 flex items-center justify-center rounded-xl border-2 border-transparent px-6 py-1 text-lg transition-all duration-200 ease-in focus:outline-1`,
+				`my-1 flex items-center justify-center rounded-xl px-6 py-1 text-lg focus:outline-1`,
 				customStyle
 			)}
 		>
