@@ -3,11 +3,10 @@ This is my portfolio, it showcases my skills, experience, and background. Feel f
 [![portfolio](https://img.shields.io/badge/Check_it_out_here-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://markokaportfolio.com/)
 ## Recently Reworked! 🎉🎉
 ### Built With
--   Javascript
+-   Typescript
 -   React
 -   Vite
 -   Tailwind
--   Flowbite
 
 ## Author
 
