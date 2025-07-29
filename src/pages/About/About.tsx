@@ -9,16 +9,14 @@ function About() {
 	const btnCustomStyle = 'bg-gray-800 h-full w-full hover:text-white text-gray-300 ease-out z-30';
 	const btnGradientAnimation = clsx(
 		'overflow-hidden transition-all duration-200',
-		'before:absolute before:inset-0 before:z-10 before:w-0 before:rounded-lg before:opacity-0',
+		'before:absolute before:inset-0 before:z-10 before:w-0 before:rounded-xl before:opacity-0',
 		'before:bg-[radial-gradient(circle_at_center,theme(colors.fuchsia.400),theme(colors.pink.300),theme(colors.cyan.400))]',
 		'hover:before:animate-hue-cycle hover:before:w-full hover:before:opacity-100',
 		'before:transition-all before:duration-300 before:ease-in-out'
 	);
-	const btnWrapperBackgroundLayer = clsx(
-		'z-20 after:absolute after:inset-1 after:rounded-xl after:bg-emerald-400'
-	);
+	const btnWrapperBackgroundLayer = clsx('z-20 after:absolute after:inset-1 after:rounded-xl');
 	const btnWrapper = clsx(
-		'group relative flex items-center justify-center rounded-xl bg-transparent p-[0.2rem]',
+		'group relative flex items-center justify-center rounded-xl bg-transparent p-[0.1rem]',
 		btnGradientAnimation,
 		btnWrapperBackgroundLayer
 	);
