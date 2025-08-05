@@ -17,10 +17,7 @@ const PrevArrowIcon: React.FC<IconProps> = ({ className = '', strokeWidth = 2, .
 		xmlns="http://www.w3.org/2000/svg"
 		strokeLinecap="round"
 		strokeLinejoin="round"
-		className={twMerge(
-			`transition-transform duration-200 group-hover:-translate-x-1`,
-			className
-		)}
+		className={twMerge(`transition-transform duration-200 hover:-translate-x-1`, className)}
 		{...props}
 	>
 		<polyline points="20 6 8 16 20 26" />
