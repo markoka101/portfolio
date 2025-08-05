@@ -60,7 +60,7 @@ function Projects() {
 								'bg-black transition-colors duration-[1s] ease-out'
 							)}
 							autoPlay
-							dragResistance={1.5}
+							dragResistance={2}
 							autoPlayInterval={4000}
 							NextIcon={
 								<NextArrowIcon
