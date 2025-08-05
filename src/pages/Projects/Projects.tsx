@@ -11,8 +11,8 @@ import { projects } from '../../data/ProjectData';
 
 function Projects() {
 	const carouselRef = useRef<CarouselRef>(null);
-	const iconClassName = clsx('my-1 hover:h-9 hover:w-9 focus:h-9 focus:w-9');
-	const iconStrokeWidth = clsx('');
+	const iconClassName = clsx('my-1 flex h-6 w-6 sm:h-8 sm:w-8 sm:focus:h-8 sm:focus:w-8');
+	const iconStrokeWdith = '6';
 
 	return (
 		<>
@@ -51,7 +51,7 @@ function Projects() {
 							trackClassName=""
 							slideClassName={clsx('flex items-center justify-center')}
 							controlClassName={clsx(
-								'h-10 w-10 rounded-lg bg-transparent text-white/50 shadow-none md:text-black/100'
+								'flex h-full w-10 items-center justify-center rounded-lg bg-transparent text-white/50 shadow-none sm:h-10 sm:w-12 md:text-black/100'
 							)}
 							indicatorClassName={clsx(
 								'h-2 w-2 cursor-pointer bg-orange-200 transition-colors duration-200'
@@ -62,8 +62,18 @@ function Projects() {
 							autoPlay
 							dragResistance={1.5}
 							autoPlayInterval={4000}
-							NextIcon={<NextArrowIcon className={iconClassName} />}
-							PrevIcon={<PrevArrowIcon className={iconClassName} />}
+							NextIcon={
+								<NextArrowIcon
+									className={iconClassName}
+									strokeWidth={iconStrokeWdith}
+								/>
+							}
+							PrevIcon={
+								<PrevArrowIcon
+									className={iconClassName}
+									strokeWidth={iconStrokeWdith}
+								/>
+							}
 							pauseOnHover
 							showControls
 							showIndicators
