@@ -3,6 +3,24 @@
   publish = "dist"
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  from    = "http://markokaportfolio.com/*"
+  to      = "https://markokaportfolio.com/:splat"
+  status  = 301
+  force   = true
+
+[[redirects]]
+  from    = "http://www.markokaportfolio.com/*"
+  to      = "https://markokaportfolio.com/:splat"
+  status  = 301
+  force   = true
+
+[[redirects]]
+  from    = "https://www.markokaportfolio.com/*"
+  to      = "https://markokaportfolio.com/:splat"
+  status  = 301
+  force   = true
+
+[[redirects]]
+  from    = "/*"
+  to      = "/index.html"
+  status  = 200
