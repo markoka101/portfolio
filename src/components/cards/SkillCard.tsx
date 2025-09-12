@@ -23,7 +23,7 @@ export default function SkillCard({ section, sectionRef, isVisible }: Readonly<S
 				{section.data.map((item) => (
 					<div key={item.title} className="w-3/4 px-1 py-2 sm:w-1/2">
 						<div className="bg-opacity-70 flex h-full items-center rounded bg-black p-5">
-							<item.icon className="mr-4" size="30" />
+							<item.icon className="mr-4 h-16 w-16" size="30" />
 							<span className="text-xl font-medium text-white">{item.title}</span>
 						</div>
 					</div>
