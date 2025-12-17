@@ -4,8 +4,6 @@
 @theme {
 	--font-inter: 'Inter Variable', 'Inter', sans-serif;
 	--font-sans: var(--font-inter);
-	/*--animate-hue-cycle-delayed: hue-circle 6s linear infinite 0.5s;*/
-	/* --animate-hue-cycle-delayed: hue-pulse 4s ease-in-out infinite 0.5s; */
 	--animate-hue-cycle-delayed: hue-shift 3s linear infinite 2s;
 	--animate-hue-cycle: hue-shift 3s linear infinite;
 

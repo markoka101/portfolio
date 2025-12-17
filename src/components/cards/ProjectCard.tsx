@@ -11,6 +11,7 @@ function ProjectCard({ project }: Readonly<{ project: Project }>) {
 	const focusStyles = clsx(
 		'focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none'
 	);
+
 	const backgroundLayer = clsx(
 		'after:absolute after:inset-1 after:rounded-lg after:bg-emerald-400'
 	);

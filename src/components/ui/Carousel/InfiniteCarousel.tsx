@@ -9,6 +9,7 @@ import {
 	useState
 } from 'react';
 import { twMerge } from 'tailwind-merge';
+import styles from './Carousel.module.css';
 import { Controls } from './components/Controls';
 import { Indicators } from './components/Indicators';
 import { useAutoPlay } from './hooks/useAutoPlay';
@@ -217,7 +218,7 @@ const InfiniteCarousel = forwardRef<CarouselRef, CarouselProps>(
 		return (
 			<div
 				ref={containerRef}
-				className={twMerge('carousel snap-x snap-mandatory', containerClassName)}
+				className={twMerge(`${styles.carousel} snap-x snap-mandatory`, containerClassName)}
 				onMouseEnter={handleMouseEnter}
 				onMouseLeave={handleMouseLeave}
 				role={role}
@@ -228,7 +229,7 @@ const InfiniteCarousel = forwardRef<CarouselRef, CarouselProps>(
 				<div
 					ref={trackRef}
 					className={twMerge(
-						'carousel-track flex transition-transform duration-300 ease-out will-change-transform',
+						`${styles.carouselTrack} flex transition-transform duration-300 ease-out will-change-transform`,
 						trackClassName
 					)}
 					onTransitionEnd={handleTransitionEnd}
@@ -240,8 +241,8 @@ const InfiniteCarousel = forwardRef<CarouselRef, CarouselProps>(
 						<div
 							key={slide.key}
 							className={twMerge(
-								'carousel-item w-full flex-shrink-0 snap-center',
-								i === currentIndex && 'carousel-item--active',
+								`${styles.carouselItem} w-full flex-shrink-0 snap-center`,
+								i === currentIndex && styles.carouselItemActive,
 								slideClassName,
 								i === currentIndex && slideActiveClassName
 							)}
@@ -259,7 +260,7 @@ const InfiniteCarousel = forwardRef<CarouselRef, CarouselProps>(
 						onNext={goNext}
 						NextIcon={NextIcon}
 						PrevIcon={PrevIcon}
-						className={twMerge('carousel-control', controlClassName)}
+						className={twMerge(styles.carouselControl, controlClassName)}
 					/>
 				)}
 

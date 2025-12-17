@@ -1,5 +1,6 @@
 import React from 'react';
 import { twMerge } from 'tailwind-merge';
+import styles from '../Carousel.module.css';
 
 interface IndicatorsProps {
 	totalItems: number;
@@ -22,12 +23,12 @@ export const Indicators: React.FC<IndicatorsProps> = ({
 	disabled = false,
 	ariaLabel = (index) => `Go to slide ${index + 1}`
 }) => {
-	const baseIndicator = twMerge('carousel-indicator', indicatorClassName);
-	const activeIndicator = twMerge('carousel-indicator--active', activeIndicatorClassName);
+	const baseIndicator = twMerge(styles.carouselIndicator, indicatorClassName);
+	const activeIndicator = twMerge(styles.carouselIndicatorActive, activeIndicatorClassName);
 
 	return (
 		<div
-			className={twMerge('carousel-indicators', containerClassName)}
+			className={twMerge(styles.carouselIndicators, containerClassName)}
 			role="tablist"
 			aria-label="Carousel pagination"
 		>

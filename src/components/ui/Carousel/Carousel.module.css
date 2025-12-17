@@ -1,0 +1,66 @@
+@reference '../../../index.css';
+
+@layer components {
+	/* Root container */
+	.carousel {
+		@apply relative w-full overflow-hidden rounded-lg;
+
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		height: auto;
+	}
+
+	/* Track wrapper */
+	.carouselTrack {
+		@apply flex w-full will-change-transform;
+		transform: translateZ(0);
+		backface-visibility: hidden;
+	}
+
+	/* Slide item */
+	.carouselItem {
+		@apply w-full flex-shrink-0;
+		backface-visibility: hidden;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	.carouselItemActive {
+		@apply opacity-100 filter-none;
+	}
+
+	/* Controls */
+	.carouselControl {
+		@apply absolute top-1/2 z-10 -translate-y-1/2 rounded-full bg-white/90 p-2 shadow-lg;
+		width: 2.75rem; /* 44px */
+		height: 2.75rem;
+	}
+	.carouselControlPrev {
+		@apply left-4;
+	}
+	.carouselControlNext {
+		@apply right-4;
+	}
+	.carouselControl:disabled {
+		@apply cursor-not-allowed opacity-50;
+	}
+
+	/* Indicators */
+	.carouselIndicators {
+		@apply absolute bottom-4 z-10 flex space-x-2;
+		left: 50%;
+		--tw-translate-x: -50%;
+		translate: var(--tw-translate-x) var(--tw-translate-y);
+	}
+	.carouselIndicator {
+		@apply h-3 w-3 rounded-full bg-gray-400/60 transition-colors hover:bg-gray-800/80;
+	}
+	.carouselIndicatorActive {
+		@apply bg-blue-600 shadow-md;
+	}
+
+	/* Empty state */
+	.carouselEmpty {
+		@apply flex h-80 items-center justify-center rounded-lg border-2 border-dashed border-gray-200 bg-gray-50 text-gray-500;
+	}
+}

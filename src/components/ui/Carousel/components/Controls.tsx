@@ -1,5 +1,6 @@
 import React, { type ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
+import styles from '../Carousel.module.css';
 
 interface ControlsProps {
 	onPrev: () => void;
@@ -53,7 +54,10 @@ export const Controls: React.FC<ControlsProps> = ({
 				disabled={disabled}
 				aria-label={ariaLabel.prev}
 				type="button"
-				className={twMerge('carousel-control carousel-control--prev', className)}
+				className={twMerge(
+					`${styles.carouselControl} ${styles.carouselControlPrev}`,
+					className
+				)}
 			>
 				{PrevIcon ?? DefaultPrev}
 			</button>
@@ -63,7 +67,10 @@ export const Controls: React.FC<ControlsProps> = ({
 				disabled={disabled}
 				aria-label={ariaLabel.next}
 				type="button"
-				className={twMerge('carousel-control carousel-control--next', className)}
+				className={twMerge(
+					`${styles.carouselControl} ${styles.carouselControlNext}`,
+					className
+				)}
 			>
 				{NextIcon ?? DefaultNext}
 			</button>
