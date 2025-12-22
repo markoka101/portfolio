@@ -13,7 +13,7 @@ export default function App() {
 	const [isOpen, setIsOpen] = useState<boolean>(false);
 
 	return (
-		<main className="flex min-h-[100vh] flex-col overflow-x-hidden overflow-y-auto text-gray-300">
+		<main className="flex min-h-dvh flex-col overflow-x-hidden text-gray-300">
 			<Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
 			{isOpen && (
 				<button
