@@ -136,17 +136,10 @@
 }
 
 body {
-	background-image: url('data:image/svg+xml;utf8,<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="100,0 200,200 0,200" fill="%2300c6fb"/><polygon points="0,0 100,0 0,200" fill="%23f5f7fa" fill-opacity="0.5"/><polygon points="100,0 200,0 200,200" fill="%2345c3e6" fill-opacity="0.7"/><polygon points="0,0 200,0 100,100" fill="%23a8edea" fill-opacity="0.4"/></svg>');
-	background-size: 150%;
-	background-color: rgb(74, 154, 181);
-	background-repeat: repeat;
-	background-position: right;
-}
-
-html {
-	overscroll-behavior: none;
-	overflow: auto;
-	height: 100%;
+	background-image: url('/public/bg-traingles.svg');
+	background-repeat: repeat-y;
+	background-position: center top;
+	background-size: 100% auto;
 }
 
 @keyframes fadeIn {
