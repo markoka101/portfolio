@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1800" viewBox="0 0 1600 1800">
+	<rect width="1600" height="1800" fill="#45c3e6" />
+
+	<!--middle diamond section-->
+	<path fill="#a8edea" fill-opacity=".7" d="M0 0 L950 0 L550 600 Z" />
+	<path fill="#a8edea" fill-opacity=".7" d="M0 1800 L950 1800 L530 1200 Z" />
+
+	<!--right lines-->
+	<path fill="#00a0c6" fill-opacity=".55" d="M980 0 L1600 1000 L1600 0 Z" />
+	<path fill="#00a0c6" fill-opacity=".55" d="M1600 700 L1600 1800 L980 1800 Z" />
+
+	<!-- left lines section -->
+	<path fill="#00a0c6" fill-opacity=".55" d="M0 300 L0 1400 L300 800 Z" />
+</svg>
