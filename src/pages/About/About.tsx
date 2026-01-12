@@ -77,7 +77,7 @@ function About() {
 								</li>
 								<li className={btnWrapper}>
 									<a
-										href="./mark-oka-resume-2025.pdf"
+										href="./mark-oka-resume-2026.pdf"
 										target="_blank"
 										rel="noreferrer"
 										className="z-30 my-1 inline-flex h-full w-full items-center justify-center rounded-xl bg-gray-800 px-6 py-1 text-lg text-gray-300 ease-out hover:text-white focus:outline-1 md:my-0.5"
