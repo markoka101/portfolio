@@ -48,7 +48,7 @@ function Person() {
 						<h4 className="mb-1 leading-relaxed text-gray-200">
 							Top Left: Hades <br />
 							Bottom Left: Salem <br />
-							Right: Throatcuttah
+							Right: Throatcuttah (Rest In Peace)
 						</h4>
 
 						<FadeInImage
