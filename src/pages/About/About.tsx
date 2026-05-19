@@ -10,7 +10,7 @@ function About() {
 	const btnGradientAnimation = clsx(
 		'overflow-hidden transition-all duration-200',
 		'before:absolute before:inset-0 before:z-10 before:w-0 before:rounded-xl before:opacity-0',
-		'before:bg-[radial-gradient(circle_at_center,theme(colors.fuchsia.400),theme(colors.pink.300),theme(colors.cyan.400))]',
+		'before:bg-[radial-gradient(circle_at_center,var(--color-fuchsia-400),var(--color-pink-300),var(--color-cyan-400))]',
 		'hover:before:animate-hue-cycle hover:before:w-full hover:before:opacity-100',
 		'before:transition-all before:duration-300 before:ease-in-out'
 	);
@@ -42,7 +42,7 @@ function About() {
 						<h1 className="title-font mb-2 text-3xl font-medium text-white md:mb-4 md:text-5xl">
 							Mark Oka
 							<p className="mt-1 text-lg font-medium text-white">
-								Software Engineer / Developer{' '}
+								Software Engineer / Developer
 							</p>
 						</h1>
 						<p className="mb-6 text-left leading-relaxed text-gray-200">
