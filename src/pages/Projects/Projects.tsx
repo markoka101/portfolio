@@ -11,7 +11,9 @@ import { projects } from '../../data/ProjectData';
 
 function Projects() {
 	const carouselRef = useRef<CarouselRef>(null);
-	const iconClassName = clsx('my-1 flex h-6 w-6 sm:h-8 sm:w-8 sm:focus:h-8 sm:focus:w-8');
+	const iconClassName = clsx(
+		'my-1 flex h-6 w-6 cursor-pointer sm:h-8 sm:w-8 sm:focus:h-8 sm:focus:w-8'
+	);
 	const iconStrokeWdith = '6';
 
 	return (
